@@ -3,7 +3,7 @@ import styled from "styled-components";
 import SocialItem from "./SocialItem";
 
 const SocialBarWrapper = styled.div`
-  margin: 15px 0 30px 0;
+  margin: 1em 0 1em 0;
 `;
 
 const SocialBar = ({
