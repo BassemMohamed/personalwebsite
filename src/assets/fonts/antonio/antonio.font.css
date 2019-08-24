@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Antonio Light";
+  src: url(Antonio-Light.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Antonio Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url(Antonio-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Antonio Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url(Antonio-Bold.woff) format("woff");
+}
