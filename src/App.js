@@ -1,16 +1,31 @@
 import React from "react";
-import { HomePage, QuotesPage } from "./Components/Pages";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import Header from "./Components/UI/Header";
+import { BasicPage } from "./Components/Pages";
 import "./assets/css/main.css";
 import "./assets/fonts/aleo/style.css";
 
-function App() {
-  return (
-    <Router>
-      <Route path="/" exact component={HomePage} />
-      <Route path="/quotes" component={QuotesPage} />
-    </Router>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { currentPage: "Home" };
+  }
+
+  navigate = pageName => {
+    this.setState({ currentPage: pageName });
+  };
+
+  render() {
+    const PageControls = {
+      currentPage: this.state.currentPage,
+      navigate: this.navigate
+    };
+    return (
+      <>
+        <Header PageControls={PageControls} />
+        <BasicPage PageControls={PageControls} />
+      </>
+    );
+  }
 }
 
 export default App;

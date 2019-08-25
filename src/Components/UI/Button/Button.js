@@ -7,6 +7,7 @@ const ButtonDom = styled.a`
   color: #555;
   transition: 0.5s;
   border: 2px solid #555;
+  margin-bottom: 1em;
   cursor: pointer;
   :hover {
     color: #fff;
@@ -14,8 +15,8 @@ const ButtonDom = styled.a`
   }
 `;
 
-const Button = ({ children, href, newTab }) => (
-  <ButtonDom target={newTab ? "_blank" : ""} href={href}>
+const Button = ({ children, href, onClick, newTab }) => (
+  <ButtonDom target={newTab ? "_blank" : ""} href={href} onClick={onClick}>
     {children}
   </ButtonDom>
 );

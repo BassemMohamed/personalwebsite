@@ -5,11 +5,6 @@ import { Label } from "../../UI/Text";
 import Button from "../../UI/Button";
 
 const HomeWrapper = styled.div`
-  margin: 50px auto 50px auto;
-  padding: 0 20px;
-  max-width: 600px;
-  text-align: center;
-
   p {
     margin: 1em 0;
   }

@@ -2,12 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Quote } from "../../UI/Text";
 
-const QuotesWrapper = styled.div`
-  margin: 50px auto 50px auto;
-  padding: 0 20px;
-  max-width: 600px;
-  text-align: center;
-`;
+const QuotesWrapper = styled.div``;
 
 const QuotesPage = () => (
   <QuotesWrapper>
