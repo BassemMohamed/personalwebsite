@@ -13,7 +13,7 @@ const pageRender = pageName => {
   switch (pageName) {
     case "Home":
       return <HomePage />;
-    case "Quote":
+    case "Quotes":
       return <QuotePage />;
     case "Stack":
       return <StackPage />;

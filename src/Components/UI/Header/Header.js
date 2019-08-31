@@ -28,17 +28,16 @@ const Header = ({ PageControls }) => {
   return (
     <HeaderDom>
       <div>
-        {PageControls.pages.map(page => (
-          <>
-            <HeaderItem
-              active={PageControls.currentPage === page}
-              onClick={() => {
-                PageControls.navigate(page);
-              }}
-            >
-              {page}
-            </HeaderItem>
-          </>
+        {PageControls.pages.map((page, i) => (
+          <HeaderItem
+            key={i}
+            active={PageControls.currentPage === page}
+            onClick={() => {
+              PageControls.navigate(page);
+            }}
+          >
+            {page}
+          </HeaderItem>
         ))}
       </div>
     </HeaderDom>
