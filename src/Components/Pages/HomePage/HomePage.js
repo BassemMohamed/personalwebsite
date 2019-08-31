@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import SocialBar from "../../UI/SocialBar";
 import { Label } from "../../UI/Text";
-import Button from "../../UI/Button";
 
 const HomeWrapper = styled.div`
   p {
@@ -47,9 +46,6 @@ const HomePage = () => (
         honing his skills by writing technical blog posts on dev.to
       </p>
     </div>
-    <Button newTab href={"https://dev.to/bassemmohamed"}>
-      Blog
-    </Button>
   </HomeWrapper>
 );
 

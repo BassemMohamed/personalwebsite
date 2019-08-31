@@ -13,7 +13,7 @@ class App extends React.Component {
   render() {
     const PageControls = {
       currentPage: this.state.currentPage,
-      pages: ["Home", "Stack", "Quotes"],
+      pages: ["Home", "Blog", "Stack", "Quotes"],
       navigate: pageName => {
         this.setState({ currentPage: pageName });
       }

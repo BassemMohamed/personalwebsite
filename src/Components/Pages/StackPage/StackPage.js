@@ -2,13 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import Icon from "../../UI/Icon";
 
-const StackDom = styled.div`
+const StackWrapper = styled.div`
   display: grid;
   grid-template-columns: auto auto auto;
 `;
 
 const StackPage = () => (
-  <StackDom>
+  <StackWrapper>
     <Icon
       name="HTML"
       imageLink={require("../../../assets/images/codestack/html.png")}
@@ -45,7 +45,7 @@ const StackPage = () => (
       name="Git"
       imageLink={require("../../../assets/images/codestack/git.png")}
     />
-  </StackDom>
+  </StackWrapper>
 );
 
 export default StackPage;
