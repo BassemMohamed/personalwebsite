@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { HomePage, QuotesPage } from "../";
+import { HomePage, QuotePage, StackPage } from "../";
 
 const BasicPageDom = styled.div`
   margin: 100px auto 50px auto;
@@ -13,8 +13,10 @@ const pageRender = pageName => {
   switch (pageName) {
     case "Home":
       return <HomePage />;
-    case "Quotes":
-      return <QuotesPage />;
+    case "Quote":
+      return <QuotePage />;
+    case "Skill":
+      return <StackPage />;
     default:
       return "";
   }

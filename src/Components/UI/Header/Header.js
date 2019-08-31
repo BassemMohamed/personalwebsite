@@ -37,12 +37,20 @@ const Header = ({ PageControls }) => {
           Home
         </HeaderItem>
         <HeaderItem
-          active={PageControls.currentPage === "Quotes"}
+          active={PageControls.currentPage === "Quote"}
           onClick={() => {
-            PageControls.navigate("Quotes");
+            PageControls.navigate("Quote");
           }}
         >
           Quotes
+        </HeaderItem>
+        <HeaderItem
+          active={PageControls.currentPage === "Skill"}
+          onClick={() => {
+            PageControls.navigate("Skill");
+          }}
+        >
+          Skills
         </HeaderItem>
       </div>
     </HeaderDom>

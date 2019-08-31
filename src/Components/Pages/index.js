@@ -1,7 +1,9 @@
 import HomePage from "./HomePage";
-import QuotesPage from "./QuotesPage";
+import QuotePage from "./QuotePage";
 import BasicPage from "./BasicPage";
+import StackPage from "./StackPage";
 
 export { HomePage };
-export { QuotesPage };
+export { QuotePage };
 export { BasicPage };
+export { StackPage };
