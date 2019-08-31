@@ -28,30 +28,18 @@ const Header = ({ PageControls }) => {
   return (
     <HeaderDom>
       <div>
-        <HeaderItem
-          active={PageControls.currentPage === "Home"}
-          onClick={() => {
-            PageControls.navigate("Home");
-          }}
-        >
-          Home
-        </HeaderItem>
-        <HeaderItem
-          active={PageControls.currentPage === "Quote"}
-          onClick={() => {
-            PageControls.navigate("Quote");
-          }}
-        >
-          Quotes
-        </HeaderItem>
-        <HeaderItem
-          active={PageControls.currentPage === "Skill"}
-          onClick={() => {
-            PageControls.navigate("Skill");
-          }}
-        >
-          Skills
-        </HeaderItem>
+        {PageControls.pages.map(page => (
+          <>
+            <HeaderItem
+              active={PageControls.currentPage === page}
+              onClick={() => {
+                PageControls.navigate(page);
+              }}
+            >
+              {page}
+            </HeaderItem>
+          </>
+        ))}
       </div>
     </HeaderDom>
   );

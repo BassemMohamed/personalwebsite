@@ -15,15 +15,15 @@ const pageRender = pageName => {
       return <HomePage />;
     case "Quote":
       return <QuotePage />;
-    case "Skill":
+    case "Stack":
       return <StackPage />;
     default:
       return "";
   }
 };
 
-const BasicPage = ({ PageControls }) => {
-  return <BasicPageDom>{pageRender(PageControls.currentPage)}</BasicPageDom>;
+const BasicPage = ({ currentPage }) => {
+  return <BasicPageDom>{pageRender(currentPage)}</BasicPageDom>;
 };
 
 export default BasicPage;
