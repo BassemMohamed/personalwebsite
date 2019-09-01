@@ -17,7 +17,7 @@ const BlogPage = () => (
         name={post.name}
         image={post.coverImage}
         url={post.devUrl}
-        desc={post.desc}
+        desc={post.description}
         date={post.published}
       />
     ))}
