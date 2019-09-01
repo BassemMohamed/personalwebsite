@@ -5,7 +5,6 @@ import { HomePage, QuotePage, StackPage, BlogPage } from "../";
 const BasicPageWrapper = styled.div`
   margin: 100px auto 50px auto;
   padding: 0 20px;
-  max-width: 600px;
   text-align: center;
 `;
 

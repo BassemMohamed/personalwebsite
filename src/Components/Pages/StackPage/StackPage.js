@@ -3,6 +3,8 @@ import styled from "styled-components";
 import Icon from "../../UI/Icon";
 
 const StackWrapper = styled.div`
+  margin: 0 auto;
+  max-width: 600px;
   display: grid;
   grid-template-columns: auto auto auto;
 `;

@@ -4,6 +4,8 @@ import SocialBar from "../../UI/SocialBar";
 import { Label } from "../../UI/Text";
 
 const HomeWrapper = styled.div`
+  margin: 0 auto;
+  max-width: 600px;
   p {
     margin: 1em 0;
   }

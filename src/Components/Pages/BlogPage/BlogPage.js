@@ -7,6 +7,12 @@ const BlogWrapper = styled.div`
   display: grid;
   grid-template-columns: auto;
   grid-gap: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+
+  @media (min-width: 750px) {
+    grid-template-columns: auto auto;
+  }
 `;
 
 const BlogPage = () => (
