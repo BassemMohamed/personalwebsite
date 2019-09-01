@@ -33,10 +33,12 @@ const QuoteDom = styled.div`
   }
 `;
 
-const Quote = ({ children, author, align }) => (
+const Quote = ({ children, author, authorPage, align }) => (
   <QuoteDom align={align}>
     <p>{children}</p>
-    <h6>{author}</h6>
+    <a href={authorPage} target="_blank" rel="noopener noreferrer">
+      <h6>{author}</h6>
+    </a>
   </QuoteDom>
 );
 export default Quote;
