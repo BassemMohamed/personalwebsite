@@ -17,7 +17,11 @@ const BlogPage = () => (
         name={post.name}
         image={post.coverImage}
         url={post.devUrl}
-        desc={post.description}
+        desc={
+          post.description.length > 50
+            ? `${post.description.substring(0, 50)}...`
+            : post.description
+        }
         date={post.published}
       />
     ))}

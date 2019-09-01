@@ -39,5 +39,48 @@ export default [
       "https://images.pexels.com/photos/177598/pexels-photo-177598.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
     devUrl:
       "https://dev.to/bassemmohamed/pass-data-through-react-s-tree-like-a-boss-2fbi"
+  },
+  {
+    key: "know-your-linux-01-directory-structure",
+    name: "Know your Linux 01: Directory structure",
+    published: "Jul 20, 2019",
+    description:
+      'First entry in "Know Your Linux" series, We will be discussing Linux\'s directory structure',
+    coverImage:
+      "https://thepracticaldev.s3.amazonaws.com/i/i5f3ze46ig48p1mzsq3f.jpeg",
+    devUrl:
+      "https://dev.to/bassemmohamed/know-your-linux-01-directory-structure-ad6"
+  },
+  {
+    key: "know-your-linux-02-know-your-commands",
+    name: "Know your Linux 02: Know your commands",
+    published: "Aug 2, 2019",
+    description:
+      "The second entry in the “Know your Linux” series. This time let’s talk about Linux's commands and how to write them efficiently.",
+    coverImage:
+      "https://thepracticaldev.s3.amazonaws.com/i/af9aed04bb5apwgav0i2.jpeg",
+    devUrl:
+      "https://dev.to/bassemmohamed/know-your-linux-02-know-your-commands-23k7"
+  },
+  {
+    key: "know-your-linux-04-processes",
+    name: "Know Your Linux 04: Processes",
+    published: "Aug 14, 2019",
+    description:
+      "The fourth entry in the “Know Your Linux” series. This time let’s talk about Linux's Processes.",
+    coverImage:
+      "https://thepracticaldev.s3.amazonaws.com/i/4c6k5sw260iwbajc1uel.jpeg",
+    devUrl: "https://dev.to/bassemmohamed/know-your-linux-04-processes-1d6m"
+  },
+  {
+    key: "know-your-linux-05-services-and-daemons",
+    name: "Know your Linux 05: Services and daemons",
+    published: "Aug 26, 2019",
+    description:
+      "The fifth entry in the “Know Your Linux” series. This time let’s talk about Linux's services and daemons.",
+    coverImage:
+      "https://thepracticaldev.s3.amazonaws.com/i/6dybnj1ufyr5p24lpbmx.jpeg",
+    devUrl:
+      "https://dev.to/bassemmohamed/know-your-linux-05-services-and-daemons-3i13"
   }
 ];
