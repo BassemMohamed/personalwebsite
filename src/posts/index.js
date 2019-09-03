@@ -82,5 +82,15 @@ export default [
       "https://thepracticaldev.s3.amazonaws.com/i/6dybnj1ufyr5p24lpbmx.jpeg",
     devUrl:
       "https://dev.to/bassemmohamed/know-your-linux-05-services-and-daemons-3i13"
+  },
+  {
+    key: "know-your-linux-06-logs",
+    name: "Know your Linux 06: Logs",
+    published: "Sep 3, 2019",
+    description:
+      "The sixth & last entry in the “Know Your Linux” series. This time let’s talk about Linux logging.",
+    coverImage:
+      "https://thepracticaldev.s3.amazonaws.com/i/zmoeaqequliijawkzd2g.jpeg",
+    devUrl: "https://dev.to/bassemmohamed/know-your-linux-06-logs-4d9e"
   }
 ];
