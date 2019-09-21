@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import BlogPosts from "../../../posts";
+import BlogPosts from "../../../Posts";
 import Card from "../../UI/Card";
+import Header from "../../UI/Header";
 
 const BlogWrapper = styled.div`
   display: grid;
@@ -16,22 +17,25 @@ const BlogWrapper = styled.div`
 `;
 
 const BlogPage = () => (
-  <BlogWrapper>
-    {BlogPosts.map((post, i) => (
-      <Card
-        key={i}
-        name={post.name}
-        image={post.coverImage}
-        url={post.devUrl}
-        desc={
-          post.description.length > 50
-            ? `${post.description.substring(0, 50)}...`
-            : post.description
-        }
-        date={post.published}
-      />
-    ))}
-  </BlogWrapper>
+  <>
+    <Header />
+    <BlogWrapper>
+      {BlogPosts.map((post, i) => (
+        <Card
+          key={post.key}
+          name={post.name}
+          image={post.coverImage}
+          url={`${window.location.origin}/post/${post.key}`}
+          desc={
+            post.description.length > 50
+              ? `${post.description.substring(0, 50)}...`
+              : post.description
+          }
+          date={post.published}
+        />
+      ))}
+    </BlogWrapper>
+  </>
 );
 
 export default BlogPage;

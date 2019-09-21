@@ -1,28 +1,35 @@
 import React from "react";
+import styled from "styled-components";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import MainRoutes from "./Routes/MainRoutes";
+import { PostPage } from "./Components/Pages";
 import Header from "./Components/UI/Header";
-import { BasicPage } from "./Components/Pages";
-import "./assets/css/main.css";
-import "./assets/fonts/aleo/style.css";
+import "./Assets/css/main.css";
+import "./Assets/fonts/aleo/style.css";
+
+const PageWrapper = styled.div`
+  margin: 100px auto 50px auto;
+  padding: 0 20px;
+  text-align: center;
+`;
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { currentPage: "Home" };
-  }
-
   render() {
-    const PageControls = {
-      currentPage: this.state.currentPage,
-      pages: ["Home", "Blog", "Stack", "Quotes"],
-      navigate: pageName => {
-        this.setState({ currentPage: pageName });
-      }
-    };
     return (
-      <>
-        <Header PageControls={PageControls} />
-        <BasicPage currentPage={PageControls.currentPage} />
-      </>
+      <Router>
+        <Header />
+        <PageWrapper>
+          {MainRoutes.map(route => (
+            <Route
+              key={route.key}
+              path={route.key}
+              exact={route.exact}
+              component={route.component}
+            />
+          ))}
+          <Route path={`/post/:postId`} component={PostPage} />
+        </PageWrapper>
+      </Router>
     );
   }
 }

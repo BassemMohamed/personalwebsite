@@ -22,8 +22,10 @@ a {
   text-decoration: none;
 }
 
+ol,
 ul {
-  padding: 0;
+  padding-left: 1rem;
+  margin: 1rem 0;
 }
 
 input:focus,
@@ -63,11 +65,13 @@ h6 {
   font-family: "Aleo Regular";
 }
 
+li,
 p {
   font-size: 1rem;
   font-family: "Aleo Light";
 }
 
+strong,
 b {
   font-family: "Aleo Bold";
 }

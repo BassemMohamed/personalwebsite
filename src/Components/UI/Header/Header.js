@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
+import MainRoutes from "../../../Routes/MainRoutes";
 
 const HeaderDom = styled.div`
   position: fixed;
@@ -15,29 +17,26 @@ const HeaderDom = styled.div`
   > div {
     display: inline-flex;
   }
+
+  > div a {
+    padding: 0 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: ${({ active }) => (active ? "#e69807" : "#555")};
+  }
+  > div a.active {
+    color: #e69807;
+  }
 `;
 
-const HeaderItem = styled.h6`
-  padding: 0 10px;
-  font-size: 1.5em;
-  cursor: pointer;
-  color: ${({ active }) => (active ? "#e69807" : "#555")};
-`;
-
-const Header = ({ PageControls }) => {
+const Header = props => {
   return (
     <HeaderDom>
       <div>
-        {PageControls.pages.map((page, i) => (
-          <HeaderItem
-            key={i}
-            active={PageControls.currentPage === page}
-            onClick={() => {
-              PageControls.navigate(page);
-            }}
-          >
-            {page}
-          </HeaderItem>
+        {MainRoutes.map(route => (
+          <Link key={route.key} to={route.key}>
+            {route.name}
+          </Link>
         ))}
       </div>
     </HeaderDom>
