@@ -88,3 +88,5 @@ Looks easy, simple and straightforward, Isn't it? Well, that’s how unit tests 
 At first, I felt like that can't be it. I felt that this was too simple, that I will never actually fail. Then after some researching, everything made sense. You don’t actually have to test the whole cycle in one test case. In every test case, you cover a small unit. Doing this everywhere means that every bit on its own is working correctly. That's why it's really important to cover every unit in your project.
 
 **Happy coding 🔥🔥**
+
+“**كود بسعادة”**

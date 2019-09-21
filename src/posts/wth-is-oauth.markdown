@@ -59,6 +59,4 @@ As always,
 
 **Happy coding 🔥🔥**
 
-Or in Arabic…
-
 “**كود بسعادة”**

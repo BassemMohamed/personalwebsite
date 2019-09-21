@@ -32,6 +32,6 @@ Whatever you are trying to do, It could be an animation or a simple popup, If yo
 
 That’s it. Basically, CSS is just like any other programming language. Writing cleaner code takes practice and focus. But it increases code quality and readability which saves lots of time and effort when adding or modifying later. Following the above guidelines helped me a lot in my journey, I hope they help you too. Let me know, Will you? 🙄🙄
 
-**Happy coding** 🔥🔥
+**Happy coding 🔥🔥**
 
-###
+“**كود بسعادة”**
