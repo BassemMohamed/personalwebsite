@@ -21,6 +21,11 @@ const PostWrapper = styled.div`
     margin-bottom: 0.5rem;
   }
 
+  p > img {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
   pre {
     padding: 0.5rem;
   }

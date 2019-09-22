@@ -63,6 +63,16 @@ export default [
       "https://dev.to/bassemmohamed/know-your-linux-02-know-your-commands-23k7"
   },
   {
+    key: "know-your-linux-03-permissions",
+    name: "Know your Linux 03: Permissions",
+    published: "Aug 11, 2019",
+    description:
+      "The third entry in the “Know your Linux” series. This time let’s talk about Linux's file permissions.",
+    coverImage:
+      "https://thepracticaldev.s3.amazonaws.com/i/2iw4hqes6uewjcmpikib.jpeg",
+    devUrl: "https://dev.to/bassemmohamed/know-your-linux-03-permissions-13ch"
+  },
+  {
     key: "know-your-linux-04-processes",
     name: "Know Your Linux 04: Processes",
     published: "Aug 14, 2019",
