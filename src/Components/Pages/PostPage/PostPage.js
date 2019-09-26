@@ -1,46 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import BlogPosts from "../../../Posts";
+import css from "./PostPage.style";
 import ReactMarkdown from "react-markdown";
-
-const PostWrapper = styled.div`
-  margin: 0 auto;
-  text-align: left;
-  max-width: 750px;
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 1rem 0;
-  }
-
-  li,
-  p {
-    margin-bottom: 0.5rem;
-  }
-
-  p > img {
-    width: 100%;
-    margin: 0.5rem 0;
-  }
-
-  pre {
-    padding: 0.5rem;
-  }
-  pre,
-  pre code {
-    overflow: scroll;
-    // white-space: pre-wrap;
-    background-color: antiquewhite;
-  }
-`;
 
 class PostPage extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { markdownText: "" };
+    this.state = { post: {}, markdownText: "" };
   }
 
   componentDidMount() {
@@ -50,13 +17,15 @@ class PostPage extends React.Component {
       }
     } = this.props;
 
+    const post = BlogPosts.filter(item => item.key === postId)[0];
     fetch(require(`../../../Posts/${postId}.markdown`))
       .then(response => {
         return response.text();
       })
-      .then(text => {
+      .then(markdownText => {
         this.setState({
-          markdownText: text
+          markdownText,
+          post
         });
       })
       .catch(err => {
@@ -66,13 +35,20 @@ class PostPage extends React.Component {
   }
 
   render() {
-    const { markdownText } = this.state;
+    const { post, markdownText } = this.state;
     return (
-      <PostWrapper>
+      <div className={this.props.className}>
+        <div className="post_cover">
+          <img alt={post.name} src={post.coverImage} />
+          <h1>{post.name}</h1>
+          <p>Published: {post.published}</p>
+        </div>
         <ReactMarkdown source={markdownText} />
-      </PostWrapper>
+      </div>
     );
   }
 }
 
-export default PostPage;
+export default styled(PostPage)`
+  ${css}
+`;
