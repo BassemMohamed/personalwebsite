@@ -3,6 +3,7 @@ import styled from "styled-components";
 import BlogPosts from "../../../Posts";
 import css from "./PostPage.style";
 import ReactMarkdown from "react-markdown";
+import { Label } from "../../UI/Text";
 
 class PostPage extends React.Component {
   constructor(props) {
@@ -40,7 +41,7 @@ class PostPage extends React.Component {
       <div className={this.props.className}>
         <div className="post_cover">
           <img alt={post.name} src={post.coverImage} />
-          <h1>{post.name}</h1>
+          <Label>{post.name}</Label>
           <p>Published: {post.published}</p>
         </div>
         <ReactMarkdown source={markdownText} />
