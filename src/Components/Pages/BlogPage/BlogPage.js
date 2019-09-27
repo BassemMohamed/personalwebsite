@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import BlogPosts from "../../../Posts";
+import BlogPosts from "../../../posts";
 import Card from "../../UI/Card";
 import Header from "../../UI/Header";
 

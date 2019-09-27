@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import BlogPosts from "../../../Posts";
+import BlogPosts from "../../../posts";
 import css from "./PostPage.style";
 import ReactMarkdown from "react-markdown";
 import { Label } from "../../UI/Text";

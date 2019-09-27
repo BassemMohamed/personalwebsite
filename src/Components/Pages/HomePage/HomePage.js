@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import SocialBar from "../../UI/SocialBar";
 import { Label } from "../../UI/Text";
-import BlogPosts from "../../../Posts";
+import BlogPosts from "../../../posts";
 import Card from "../../UI/Card";
 
 const HomeWrapper = styled.div`
