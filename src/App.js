@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import MainRoutes from "./Routes/MainRoutes";
 import { PostPage } from "./Components/Pages";
 import Header from "./Components/UI/Header";
-import "./Assets/css/main.css";
-import "./Assets/fonts/aleo/style.css";
+import "./assets/css/main.css";
+import "./assets/fonts/aleo/style.css";
 
 const PageWrapper = styled.div`
   margin: 100px auto 50px auto;
