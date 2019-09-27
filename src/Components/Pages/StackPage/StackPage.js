@@ -13,39 +13,39 @@ const StackPage = () => (
   <StackWrapper>
     <Icon
       name="HTML"
-      imageLink={require("../../../assets/images/codestack/html.png")}
+      imageLink={require("../../../Assets/images/codestack/html.png")}
     />
     <Icon
       name="CSS"
-      imageLink={require("../../../assets/images/codestack/css.png")}
+      imageLink={require("../../../Assets/images/codestack/css.png")}
     />
     <Icon
       name="Javascript"
-      imageLink={require("../../../assets/images/codestack/js.jpeg")}
+      imageLink={require("../../../Assets/images/codestack/js.jpeg")}
     />
     <Icon
       name="ES6"
-      imageLink={require("../../../assets/images/codestack/es6.jpg")}
+      imageLink={require("../../../Assets/images/codestack/es6.jpg")}
     />
     <Icon
       name="React"
-      imageLink={require("../../../assets/images/codestack/react.png")}
+      imageLink={require("../../../Assets/images/codestack/react.png")}
     />
     <Icon
       name="Redux"
-      imageLink={require("../../../assets/images/codestack/redux.png")}
+      imageLink={require("../../../Assets/images/codestack/redux.png")}
     />
     <Icon
       name="Node"
-      imageLink={require("../../../assets/images/codestack/node.png")}
+      imageLink={require("../../../Assets/images/codestack/node.png")}
     />
     <Icon
       name="npm"
-      imageLink={require("../../../assets/images/codestack/npm.png")}
+      imageLink={require("../../../Assets/images/codestack/npm.png")}
     />
     <Icon
       name="Git"
-      imageLink={require("../../../assets/images/codestack/git.png")}
+      imageLink={require("../../../Assets/images/codestack/git.png")}
     />
   </StackWrapper>
 );
