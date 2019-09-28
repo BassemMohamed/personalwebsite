@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import BlogPosts from "../../../Posts/";
+import BlogPosts from "../../../Posts";
 import Card from "../../UI/Card";
 import Header from "../../UI/Header";
 
@@ -25,7 +25,7 @@ const BlogPage = () => (
           key={post.key}
           name={post.name}
           image={post.coverImage}
-          url={`${window.location.origin}/post/${post.key}`}
+          url={`${window.location.origin}/Post/${post.key}`}
           desc={
             post.description.length > 50
               ? `${post.description.substring(0, 50)}...`
