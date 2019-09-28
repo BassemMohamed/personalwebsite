@@ -2,23 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import SocialBar from "../../UI/SocialBar";
 import { Label } from "../../UI/Text";
+import Latest from "../../UI/Latest";
 import BlogPosts from "../../../Posts/";
-import Card from "../../UI/Card";
 
 const HomeWrapper = styled.div`
   margin: 0 auto;
   max-width: 600px;
   p {
     margin: 1em 0;
-  }
-
-  .latest_post {
-    padding-top: 0.5rem;
-    border-top: 1px solid #eee;
-  }
-  .latest_post > h2 {
-    text-align: left;
-    margin-bottom: 0.25rem;
   }
 `;
 
@@ -70,22 +61,7 @@ const HomePage = () => {
         </p>
       </div>
 
-      {/* TODO: Better latest section with latest tweet also */}
-      <div className="latest_post">
-        <Label>Latest Post</Label>
-        <Card
-          key={latestPost.key}
-          name={latestPost.name}
-          image={latestPost.coverImage}
-          url={`${window.location.origin}/post/${latestPost.key}`}
-          desc={
-            latestPost.description.length > 50
-              ? `${latestPost.description.substring(0, 50)}...`
-              : latestPost.description
-          }
-          date={latestPost.published}
-        />
-      </div>
+      <Latest post={latestPost} />
     </HomeWrapper>
   );
 };
