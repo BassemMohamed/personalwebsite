@@ -6,7 +6,7 @@ export default css`
   max-width: 750px;
 
   .post_cover {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #555;
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
   }
@@ -32,6 +32,23 @@ export default css`
 
   img {
     width: 100%;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid #555;
+  }
+
+  th,
+  td {
+    padding: 0.25rem;
   }
 
   pre {

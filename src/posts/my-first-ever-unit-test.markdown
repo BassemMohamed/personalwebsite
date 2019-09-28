@@ -2,7 +2,7 @@ I consider myself quite late. Being in the second year of my career and my first
 
 In this post, I would like to share with you my first ever test.
 
-**What is unit testing? 🤔**
+## What is unit testing? 🤔
 
 According to Wikipedia, It is “a software testing method by which individual units of source code, sets of one or more computer program modules together with associated control data, usage procedures, and operating procedures, are tested to determine whether they are fit for use”
 
@@ -15,7 +15,7 @@ The way I see it is that unit testing follows the divide and conquer methodology
 3. Write your tests for this particular unit covering every scenario
 4. Do this until every unit in your application is tested
 
-**My super simple yet super awesome task.** 😎
+## My super simple yet super awesome task. 😎
 
 Being my first task ever in spring. I choose the simplest one I could get. The code below is a controller that retrieves a resource from the service layer and based on the response, The controller would respond with a 200 or a 404 response code.
 
@@ -34,7 +34,7 @@ public ResponseEntity<List<Resource>> getAllResource() {
 
 Very simple, Isn't it? If you think about it, All the logic in the code above boils down to an IF condition. And that's exactly what we are gonna test.
 
-**Let's write tests for that awesome task. 😎**
+## Let's write tests for that awesome task. 😎
 
 Okay, let's follow the above steps :
 

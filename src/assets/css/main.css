@@ -66,6 +66,8 @@ h6 {
 }
 
 li,
+td,
+th,
 p {
   font-size: 1rem;
   font-family: "Aleo Light";

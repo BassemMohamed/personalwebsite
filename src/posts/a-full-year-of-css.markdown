@@ -1,5 +1,3 @@
-### A full year of CSS
-
 During the first year of my career, I worked in a digital marketing agency as a full stack web developer. In that field, the main focus was on user experience, good-looking designs, and SEO. It took me a while to know my way around web development. I had no idea how to build a fully responsive page at first. But near the end of my first year, I developed several websites for big brands.
 
 In this article, I would like to share with you what are my rules when it comes to writing CSS.
@@ -12,7 +10,7 @@ CSS is as complex as any other language. Actually, CSS have different [methodolo
 
 What I really like about CSS is that the code quality, the effort, and the developer’s skill can be clearly seen in the final design.
 
-### CSS guidelines I follow 🙄 :
+## CSS guidelines I follow 🙄 :
 
 ### Think hard about your selectors 🤔
 

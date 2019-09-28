@@ -1,8 +1,8 @@
 Hello and welcome to another entry in “Know your linux” series. This time let’s talk about Linux’s permissions. Should we dive right in? 🏄‍♂️
 
-Before we do ✋ Make sure to checkout the second entry in the series.
+Before we do ✋ Make sure to checkout the second [entry](http://bassemmohamed.me/post/know-your-linux-02-know-your-commands) in the series.
 
-User’s categories :
+## User’s categories :
 
 Each file in linux has 3 categories of users to which permissions apply to.
 
@@ -10,7 +10,7 @@ Each file in linux has 3 categories of users to which permissions apply to.
 2. **Group**: All of users that are member of the file’s owner group, normally that is the primary group of the owner user.
 3. **Other**: All other users on the system that are not the owner user and are not members of the owner group.
 
-Types of permissions :
+## Types of permissions :
 
 Each user category can have 3 types of permissions. Those permissions could mean different things depending on whether they are applied to a file or a directory.
 
@@ -22,7 +22,7 @@ There are some other special permissions that I won’t be covering today.
 
 For now, thats all! Yeah!! 🎉 It is that simple. Thats all you need to know when it comes to linux’s file permissions. Want to see an example? 🤔
 
-Let’s see it in action :
+### Let’s see it in action :
 
 Running the _ls -l_ command which is a list directory contents command with *-l* option for long listing format, provides much more info about each file.
 

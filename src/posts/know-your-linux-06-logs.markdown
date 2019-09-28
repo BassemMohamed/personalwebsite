@@ -1,8 +1,6 @@
 Hello and welcome to the sixth and final entry in "Know Your Linux" series. This time let’s talk about Linux’s logging.
 
-Before we dive right in 🏄‍♂️, make sure to check out the previous entry.
-
-{% link [https://dev.to/bassemmohamed/know-your-linux-05-services-and-daemons-3i13](https://dev.to/bassemmohamed/know-your-linux-05-services-and-daemons-3i13) %}
+Before we dive right in 🏄‍♂️, make sure to check out the previous [entry](http://bassemmohamed.me/post/know-your-linux-05-services-and-daemons).
 
 Ready to dive in? Let’s go.
 
@@ -14,13 +12,9 @@ Well, Logging acts as your friend and advisor when the customer comes yelling **
 
 Linux - like other operating systems - provides logs on everything from kernel events to user actions. We can thank two services for that _`systemd-journald` and `rsyslog`._ All the collected logs by default are stored in the directory `/var/log`.
 
-Wanna know more about what services and daemons are? checkout the previous entry.
+Wanna know more about what services and daemons are? checkout the previous [entry](http://bassemmohamed.me/post/know-your-linux-05-services-and-daemons).
 
-{% link [https://dev.to/bassemmohamed/know-your-linux-05-services-and-daemons-3i13](https://dev.to/bassemmohamed/know-your-linux-05-services-and-daemons-3i13) %}
-
-Wanna know more about how Linux structures its directories?
-
-{% link [https://dev.to/bassemmohamed/know-your-linux-01-directory-structure-ad6](https://dev.to/bassemmohamed/know-your-linux-01-directory-structure-ad6) %}
+Wanna know more about how Linux structures its directories? checkout this [entry](http://bassemmohamed.me/post/know-your-linux-01-directory-structure)
 
 ## Configuring logs
 
@@ -52,7 +46,16 @@ From the example above, We can see that the file `/var/log/maillog` will contain
 
 The table below shows all priorities and their meaning.
 
-[Untitled](https://www.notion.so/4297f041c26d432ca2d82bb3c0ec361e)
+| Code | Priority | Severity                         |
+| :--: | :------: | -------------------------------- |
+|  0   |  emerg   | System is unstable               |
+|  1   |  alert   | Action must be taken immediately |
+|  2   |   crit   | Critical condition               |
+|  3   |   err    | non-critical error               |
+|  4   | warning  | Warning condition                |
+|  5   |  notice  | Normal but significant event     |
+|  6   |   info   | Informational event              |
+|  7   |  debug   | Debug-level messages             |
 
 ## Do logs stay forever?
 

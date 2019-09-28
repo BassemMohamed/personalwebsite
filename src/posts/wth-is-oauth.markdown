@@ -1,6 +1,6 @@
 Recently I had to add Single Sign On **- SSO -** in a frontend project at work. I had absolutely no idea what OAuth is. I had to learn about it and I am here to share what I learned 😊
 
-What is OAuth
+## What is OAuth
 
 Well, lets start with the basics. OAuth stands for Open Authentication. It’s first version, **OAuth 1.0** was designed to handle the **Delegated authorization** problem. Imagine you need to let some service ‘X’ access some of your data located in service 'Y'. Before OAuth, You would have to give the password of service Y to service X. That bad! You are not just giving them access to some data. You are giving them full control of your account. Without a doubt, we needed a better way! ✋
 
@@ -16,7 +16,7 @@ Lets start by some terminology, just to make it clear for the rest of this post.
 
 Note that both the authorization server and resource server could be the same application, or they could be totally different ones.
 
-OAuth Flow ( authorization code type )
+## OAuth Flow ( authorization code type )
 
 I created this diagram that shows the whole OAuth flow, have a quick look at it and we will go over every step after the diagram.
 
