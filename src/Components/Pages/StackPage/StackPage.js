@@ -6,7 +6,14 @@ const StackWrapper = styled.div`
   margin: 0 auto;
   max-width: 600px;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto;
+
+  @media (min-width: 768px) {
+    grid-template-columns: auto auto;
+  }
+  @media (min-width: 1024px) {
+    grid-template-columns: auto auto auto;
+  }
 `;
 
 const StackPage = () => (

@@ -9,8 +9,12 @@ import "./Assets/fonts/aleo/style.css";
 
 const PageWrapper = styled.div`
   margin: 100px auto 50px auto;
-  padding: 0 20px;
+  padding: 0 5px;
   text-align: center;
+
+  @media (min-width: 450px) {
+    padding: 0 20px;
+  }
 `;
 
 class App extends React.Component {

@@ -18,7 +18,7 @@ const AlignRightStyle = `
 
 const QuoteDom = styled.div`
   ${({ align }) => (align === "right" ? AlignRightStyle : AlignLeftStyle)}
-  width: 100%;
+  width: calc(100% - 15px);
   margin: 25px 0;
   p {
     color: #555;
