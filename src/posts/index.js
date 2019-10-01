@@ -102,5 +102,16 @@ export default [
     coverImage:
       "https://thepracticaldev.s3.amazonaws.com/i/zmoeaqequliijawkzd2g.jpeg",
     devUrl: "https://dev.to/bassemmohamed/know-your-linux-06-logs-4d9e"
+  },
+  {
+    key: "i-built-my-own-personal-website-yaaay",
+    name: "I built my own personal website! Yaaay 😎",
+    published: "Sep 30, 2019",
+    description:
+      "Let's talk about my personal website building journey. What technologies I am using? and why?!",
+    coverImage:
+      "https://thepracticaldev.s3.amazonaws.com/i/tp4h0qbur6jmhj683fig.png",
+    devUrl:
+      "https://dev.to/bassemmohamed/i-built-my-own-personal-website-yaaay-4mbf"
   }
 ];

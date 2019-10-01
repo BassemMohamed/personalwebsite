@@ -20,7 +20,7 @@ const BlogPage = () => (
   <>
     <Header />
     <BlogWrapper>
-      {BlogPosts.map((post, i) => (
+      {BlogPosts.reverse().map(post => (
         <Card
           key={post.key}
           name={post.name}
