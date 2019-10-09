@@ -8,6 +8,7 @@ const HeaderDom = styled.div`
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 1;
   text-align: center;
   padding: 5px 0;
   background-color: #f5f5f5;

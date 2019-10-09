@@ -14,28 +14,33 @@ const BlogWrapper = styled.div`
   @media (min-width: 750px) {
     grid-template-columns: auto auto;
   }
+  @media (min-width: 1025px) {
+    grid-template-columns: auto auto auto;
+  }
 `;
 
-const BlogPage = () => (
-  <>
-    <Header />
-    <BlogWrapper>
-      {BlogPosts.reverse().map(post => (
-        <Card
-          key={post.key}
-          name={post.name}
-          image={post.coverImage}
-          url={`${window.location.origin}/Post/${post.key}`}
-          desc={
-            post.description.length > 50
-              ? `${post.description.substring(0, 50)}...`
-              : post.description
-          }
-          date={post.published}
-        />
-      ))}
-    </BlogWrapper>
-  </>
-);
+class BlogPage extends React.Component {
+  render() {
+    return (
+      <>
+        <Header />
+        <BlogWrapper>
+          {BlogPosts.slice(0)
+            .reverse()
+            .map(post => (
+              <Card
+                key={post.key}
+                name={post.name}
+                image={post.coverImage}
+                url={`${window.location.origin}/Post/${post.key}`}
+                desc={post.description}
+                date={post.published}
+              />
+            ))}
+        </BlogWrapper>
+      </>
+    );
+  }
+}
 
 export default BlogPage;

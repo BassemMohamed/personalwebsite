@@ -4,41 +4,40 @@ import styled from "styled-components";
 const CardDom = styled.div`
   color: #555;
   width: 100%;
-  height: 200px;
+  max-width: 500px;
+  position: relative;
   cursor: pointer;
-  display: inline-flex;
+  text-align: left;
   border: 1px solid #dedede;
   background-color: #fafafa;
 
-  img,
-  div {
-    width: 50%;
-    height: auto;
-  }
   div {
     padding: 20px;
+    padding-bottom: 45px;
 
     .desc {
       margin: 10px 0;
     }
     .date {
       font-family: "Aleo Italic";
+      margin: 0;
+      position: absolute;
+      left: 20px;
+      bottom: 20px;
     }
   }
 
   :hover {
     background-color: #f5f5f5;
-    div {
-      background-size: 100% 100%;
-    }
   }
 `;
 
 const CardImage = styled.div`
   background-image: url(${({ image }) => image});
-  background-size: 110% 110%;
-  background-position: center;
+  background-size: cover;
+  background-position: top left;
   transition: background 0.8s;
+  height: 150px;
 `;
 
 const handleClick = url => {
