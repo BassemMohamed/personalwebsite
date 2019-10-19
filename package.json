@@ -2,7 +2,7 @@
   "name": "personal-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bassemmohamed.github.io",
+  "homepage": "https://bassemmohamed.me",
   "dependencies": {
     "@babel/core": "^7.6.2",
     "@babel/polyfill": "^7.6.0",
