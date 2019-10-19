@@ -47,10 +47,10 @@ const HomePage = () => {
           <p>
             Hey, Welcome to Bassem Mohamed’s personal space. Bassem is a
             computer science graduate since 2017, super passionate about
-            technology and programming, started his career as a{" "}
-            <b>full stack</b> web developer in a digital marketing agency, where
-            he spent a full year building websites for big brands like Nestle,
-            Creative closets and Aramex.
+            technology and programming, started his career as a full stack web
+            developer in a digital marketing agency, where he spent a full year
+            building websites for big brands like Nestle, Creative closets and
+            Aramex.
           </p>
           <p>
             Now, He is working as a <b>frontend</b> developer at seal-software,
@@ -58,8 +58,9 @@ const HomePage = () => {
             extraction.
           </p>
           <p>
-            Also, Bassem wants to become a <b>writer</b> someday. Right now he
-            is honing his skills by writing technical blog posts on dev.to
+            Also, Bassem wants to become a <b>writer</b> someday. Late 2018 He
+            started blogging on dev.to, Right now he published <b>10+</b> posts
+            that have <b>22,000+</b> total post views.
           </p>
         </div>
       </HomeWrapper>

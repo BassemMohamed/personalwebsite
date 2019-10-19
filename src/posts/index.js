@@ -113,5 +113,15 @@ export default [
       "https://thepracticaldev.s3.amazonaws.com/i/tp4h0qbur6jmhj683fig.png",
     devUrl:
       "https://dev.to/bassemmohamed/i-built-my-own-personal-website-yaaay-4mbf"
+  },
+  {
+    key: "client-side-rendering-get-out-of-my-way",
+    name: "Client-side rendering! Get out of my way!!",
+    published: "Oct 20, 2019",
+    description: "My personal website short deployment journey",
+    coverImage:
+      "https://thepracticaldev.s3.amazonaws.com/i/qgpj1ecln3c3qrj943j4.png",
+    devUrl:
+      "https://dev.to/bassemmohamed/client-side-rendering-get-out-of-my-way-3bij"
   }
 ];
