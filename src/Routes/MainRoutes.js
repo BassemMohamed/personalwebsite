@@ -1,4 +1,10 @@
-import { HomePage, QuotePage, StackPage, BlogPage } from "../Components/Pages";
+import {
+  HomePage,
+  QuotePage,
+  StackPage,
+  TimelinePage,
+  BlogPage
+} from "../Components/Pages";
 
 export default [
   {
@@ -11,6 +17,12 @@ export default [
     name: "Blog",
     key: "/blog",
     component: BlogPage,
+    exact: true
+  },
+  {
+    name: "Timeline",
+    key: "/timeline",
+    component: TimelinePage,
     exact: true
   },
   {

@@ -38,7 +38,14 @@ button:focus {
 /* Base font in pexels */
 html,
 body {
-  font-size: 16px;
+  font-size: 14px;
+}
+
+@media (min-width: 488px) {
+  html,
+  body {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 768px) {
