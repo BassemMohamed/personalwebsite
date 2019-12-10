@@ -85,7 +85,7 @@ const SocialBar = ({
     {CVFFlag && (
       <SocialItem
         title="Curriculum Vitae"
-        href="https://drive.google.com/file/d/1s6s5WzDHD1x0Qnke7a_Mw5QtLFwqxZwA/view?usp=sharing"
+        href="https://drive.google.com/open?id=1VEGNhIemy3Nn0PUn4B7cPvhaAcvk5cGR"
         fontAwesomeClass="fa fa-file"
       />
     )}
