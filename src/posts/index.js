@@ -123,13 +123,12 @@ export default [
       "https://thepracticaldev.s3.amazonaws.com/i/qgpj1ecln3c3qrj943j4.png",
     devUrl:
       "https://dev.to/bassemmohamed/client-side-rendering-get-out-of-my-way-3bij"
-  }
   },
   {
     key: "the-perfect-reacts-component-doesnt-exist",
     name: "The perfect React's component doesn't exist. 🤯",
     published: "Dec 16, 2019",
-    description: "My personal website short deployment journey",
+    description: "Let's talk about how we can optimize our react's components using the rule \"Less re-renders == More performance\"",
     coverImage:
       "https://thepracticaldev.s3.amazonaws.com/i/4em9wjblzhsh4f9vav1x.png",
     devUrl:

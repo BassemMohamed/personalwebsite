@@ -19,7 +19,7 @@ class PostPage extends React.Component {
     } = this.props;
 
     const post = BlogPosts.filter(item => item.key === postId)[0];
-    fetch(require(`../../../Posts/${postId}.markdown`))
+      fetch(require(`../../../Posts/${postId}.markdown`))
       .then(response => {
         return response.text();
       })
@@ -30,7 +30,7 @@ class PostPage extends React.Component {
         });
       })
       .catch(err => {
-        // TODO : Redirect to error page!
+        // TODO: Redirect to error page!
         console.log(err);
       });
   }
