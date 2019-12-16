@@ -124,4 +124,15 @@ export default [
     devUrl:
       "https://dev.to/bassemmohamed/client-side-rendering-get-out-of-my-way-3bij"
   }
+  },
+  {
+    key: "the-perfect-reacts-component-doesnt-exist",
+    name: "The perfect React's component doesn't exist. 🤯",
+    published: "Dec 16, 2019",
+    description: "My personal website short deployment journey",
+    coverImage:
+      "https://thepracticaldev.s3.amazonaws.com/i/4em9wjblzhsh4f9vav1x.png",
+    devUrl:
+      "https://dev.to/bassemmohamed/the-perfect-react-s-component-doesn-t-exist-fgn"
+  }
 ];
