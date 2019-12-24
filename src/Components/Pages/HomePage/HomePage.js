@@ -1,9 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import SocialBar from "../../UI/SocialBar";
-import { Label } from "../../UI/Text";
-import Latest from "../../UI/Latest";
 import BlogPosts from "../../../posts";
+import { Text, Latest, SocialBar } from "../../UI";
 
 const HomeWrapper = styled.section`
   margin: 0 auto;
@@ -42,7 +40,7 @@ const HomePage = () => {
           CVFFlag
         />
         <div>
-          <Label>Bassem Mohamed</Label>
+          <Text.Label>Bassem Mohamed</Text.Label>
           <p>
             Hey, Welcome to Bassem Mohamed’s personal space. Bassem is a
             computer science graduate since 2017, super passionate about

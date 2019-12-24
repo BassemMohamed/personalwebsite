@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import css from "./TimelinePage.style";
-import Timeline from "../../UI/Timeline";
+import { Timeline } from "../../UI";
 
 const TimelinePage = ({ className }) => (
   <section className={className}>

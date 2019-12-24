@@ -3,10 +3,11 @@ import styled from "styled-components";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import MainRoutes from "./Routes/MainRoutes";
 import { PostPage, NotFoundPage } from "./Components/Pages";
-import BurgerMenu from "./Components/UI/BurgerMenu";
-import CoffeeIcon from "./Components/UI/CoffeeIcon";
+import { Menu } from "./Components/UI/";
+import { CoffeeIcon } from "./Components/UI/Icon";
 import "./assets/css/main.css";
 import "./assets/css/menu.css";
+// For the coffe icon
 import "./assets/fonts/aleo/style.css";
 
 const PageWrapper = styled.div`
@@ -22,7 +23,7 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <BurgerMenu />
+        <Menu />
         <PageWrapper id="page-wrapper">
           <Switch>
             {MainRoutes.map(route => (

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import BlogPosts from "../../../posts";
-import Card from "../../UI/Card";
+import { Card } from "../../UI";
 
 const BlogWrapper = styled.section`
   display: grid;

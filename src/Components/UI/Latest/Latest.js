@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Label } from "../Text";
-import Card from "../Card";
+import { Text, Card } from "../";
 
 const LatestDom = styled.div`
   padding-top: 0.5rem;
@@ -37,7 +36,7 @@ const LatestDom = styled.div`
 const Latest = ({ post }) => (
   <LatestDom>
     <div>
-      <Label>Latest Tweet</Label>
+      <Text.Label>Latest Tweet</Text.Label>
       <a
         className="twitter-timeline"
         href="https://twitter.com/BassemMohamed94"
@@ -49,7 +48,7 @@ const Latest = ({ post }) => (
     </div>
     {post && (
       <div>
-        <Label>Latest Post</Label>
+        <Text.Label>Latest Post</Text.Label>
         <Card
           key={post.key}
           name={post.name}

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Icon from "../../UI/Icon";
+import { Icon } from "../../UI";
 
 const StackWrapper = styled.section`
   margin: 0 auto;

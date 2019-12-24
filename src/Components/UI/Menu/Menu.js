@@ -1,13 +1,13 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { slide as Menu } from "react-burger-menu";
+import { slide as Slide } from "react-burger-menu";
 import MainRoutes from "../../../Routes/MainRoutes";
 
-const BurgerMenu = () => {
+const Menu = () => {
   let location = useLocation();
 
   return (
-    <Menu isOpen={false} pageWrapId={"page-wrapper"}>
+    <Slide isOpen={false} pageWrapId={"page-wrapper"}>
       {MainRoutes.map(route => (
         <div
           key={route.key}
@@ -19,8 +19,8 @@ const BurgerMenu = () => {
           </Link>
         </div>
       ))}
-    </Menu>
+    </Slide>
   );
 };
 
-export default BurgerMenu;
+export default Menu;
