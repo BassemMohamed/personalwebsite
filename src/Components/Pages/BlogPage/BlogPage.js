@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import BlogPosts from "../../../Posts";
+import BlogPosts from "../../../posts";
 import Card from "../../UI/Card";
 
 const BlogWrapper = styled.section`
@@ -29,7 +29,7 @@ class BlogPage extends React.Component {
               key={post.key}
               name={post.name}
               image={post.coverImage}
-              url={`${window.location.origin}/Post/${post.key}`}
+              url={`${window.location.origin}/post/${post.key}`}
               desc={post.description}
               date={post.published}
             />

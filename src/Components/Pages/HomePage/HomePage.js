@@ -3,7 +3,7 @@ import styled from "styled-components";
 import SocialBar from "../../UI/SocialBar";
 import { Label } from "../../UI/Text";
 import Latest from "../../UI/Latest";
-import BlogPosts from "../../../Posts/";
+import BlogPosts from "../../../posts";
 
 const HomeWrapper = styled.section`
   margin: 0 auto;
