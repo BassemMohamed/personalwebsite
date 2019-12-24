@@ -51,6 +51,7 @@
   color: #ffa500;
 }
 
+.bm-item.active a,
 .bm-item-list a:hover {
   color: #000;
 }

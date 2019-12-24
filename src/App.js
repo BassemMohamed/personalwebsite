@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import MainRoutes from "./Routes/MainRoutes";
-import { PostPage } from "./Components/Pages";
+import { PostPage, NotFoundPage } from "./Components/Pages";
 import BurgerMenu from "./Components/UI/BurgerMenu";
 import "./Assets/css/main.css";
 import "./Assets/css/menu.css";
@@ -32,6 +32,7 @@ class App extends React.Component {
             />
           ))}
           <Route path={`/post/:postId`} component={PostPage} />
+          <Route path="*" component={NotFoundPage} />
         </PageWrapper>
       </Router>
     );
