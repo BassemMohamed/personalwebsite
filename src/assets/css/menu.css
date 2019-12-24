@@ -22,6 +22,7 @@
 
 .bm-cross {
   background: #ffa500;
+  height: 24px !important;
 }
 
 .bm-cross-button:hover .bm-cross {
@@ -62,7 +63,7 @@
 
 .bm-item {
   display: inline-block;
-  margin: 0.5rem 0;
+  margin: 1rem 0;
   outline: none;
 }
 
