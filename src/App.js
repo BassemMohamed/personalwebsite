@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import MainRoutes from "./Routes/MainRoutes";
 import { PostPage, NotFoundPage } from "./Components/Pages";
 import BurgerMenu from "./Components/UI/BurgerMenu";
@@ -23,16 +23,18 @@ class App extends React.Component {
       <Router>
         <BurgerMenu />
         <PageWrapper id="page-wrapper">
-          {MainRoutes.map(route => (
-            <Route
-              key={route.key}
-              path={route.key}
-              exact={route.exact}
-              component={route.component}
-            />
-          ))}
-          <Route path={`/post/:postId`} component={PostPage} />
-          <Route path="*" component={NotFoundPage} />
+          <Switch>
+            {MainRoutes.map(route => (
+              <Route
+                key={route.key}
+                path={route.key}
+                exact={route.exact}
+                component={route.component}
+              />
+            ))}
+            <Route path={`/post/:postId`} component={PostPage} />
+            <Route path="*" component={NotFoundPage} />
+          </Switch>
         </PageWrapper>
       </Router>
     );
