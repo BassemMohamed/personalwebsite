@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import MainRoutes from "./Routes/MainRoutes";
 import { PostPage, NotFoundPage } from "./Components/Pages";
 import BurgerMenu from "./Components/UI/BurgerMenu";
+import CoffeeIcon from "./Components/UI/CoffeeIcon";
 import "./Assets/css/main.css";
 import "./Assets/css/menu.css";
 import "./Assets/fonts/aleo/style.css";
@@ -35,6 +36,7 @@ class App extends React.Component {
             <Route path={`/post/:postId`} component={PostPage} />
             <Route path="*" component={NotFoundPage} />
           </Switch>
+          <CoffeeIcon />
         </PageWrapper>
       </Router>
     );
