@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Quote } from "../../UI/Text";
 
-const QuotesWrapper = styled.div`
+const QuotesWrapper = styled.section`
   margin: 0 auto;
   max-width: 600px;
 `;

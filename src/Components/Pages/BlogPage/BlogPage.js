@@ -2,9 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import BlogPosts from "../../../Posts";
 import Card from "../../UI/Card";
-import Header from "../../UI/Header";
 
-const BlogWrapper = styled.div`
+const BlogWrapper = styled.section`
   display: grid;
   grid-template-columns: auto;
   grid-gap: 20px;
@@ -22,23 +21,20 @@ const BlogWrapper = styled.div`
 class BlogPage extends React.Component {
   render() {
     return (
-      <>
-        <Header />
-        <BlogWrapper>
-          {BlogPosts.slice(0)
-            .reverse()
-            .map(post => (
-              <Card
-                key={post.key}
-                name={post.name}
-                image={post.coverImage}
-                url={`${window.location.origin}/Post/${post.key}`}
-                desc={post.description}
-                date={post.published}
-              />
-            ))}
-        </BlogWrapper>
-      </>
+      <BlogWrapper>
+        {BlogPosts.slice(0)
+          .reverse()
+          .map(post => (
+            <Card
+              key={post.key}
+              name={post.name}
+              image={post.coverImage}
+              url={`${window.location.origin}/Post/${post.key}`}
+              desc={post.description}
+              date={post.published}
+            />
+          ))}
+      </BlogWrapper>
     );
   }
 }

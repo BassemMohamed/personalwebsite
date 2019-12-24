@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Icon from "../../UI/Icon";
 
-const StackWrapper = styled.div`
+const StackWrapper = styled.section`
   margin: 0 auto;
   max-width: 600px;
   display: grid;

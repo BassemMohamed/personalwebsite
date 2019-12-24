@@ -5,7 +5,7 @@ import { Label } from "../../UI/Text";
 import Latest from "../../UI/Latest";
 import BlogPosts from "../../../Posts/";
 
-const HomeWrapper = styled.div`
+const HomeWrapper = styled.section`
   margin: 0 auto;
   max-width: 600px;
   p {
@@ -14,7 +14,6 @@ const HomeWrapper = styled.div`
 `;
 
 const AvatarWrapper = styled.div`
-  margin-top: 50px;
   img {
     width: 100%;
     max-width: 300px;

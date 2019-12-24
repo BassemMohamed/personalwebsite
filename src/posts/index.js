@@ -128,7 +128,7 @@ export default [
     key: "the-perfect-reacts-component-doesnt-exist",
     name: "The perfect React's component doesn't exist. 🤯",
     published: "Dec 16, 2019",
-    description: "Let's talk about how we can optimize our react's components using the rule \"Less re-renders == More performance\"",
+    description: "Let's talk about how we can optimize our react's components using this simple rule \"Less re-renders == More performance\"",
     coverImage:
       "https://thepracticaldev.s3.amazonaws.com/i/4em9wjblzhsh4f9vav1x.png",
     devUrl:
