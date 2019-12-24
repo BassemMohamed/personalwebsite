@@ -5,9 +5,9 @@ import MainRoutes from "./Routes/MainRoutes";
 import { PostPage, NotFoundPage } from "./Components/Pages";
 import BurgerMenu from "./Components/UI/BurgerMenu";
 import CoffeeIcon from "./Components/UI/CoffeeIcon";
-import "./Assets/css/main.css";
-import "./Assets/css/menu.css";
-import "./Assets/fonts/aleo/style.css";
+import "./assets/css/main.css";
+import "./assets/css/menu.css";
+import "./assets/fonts/aleo/style.css";
 
 const PageWrapper = styled.div`
   text-align: center;
