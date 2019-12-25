@@ -28,8 +28,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "jest": "jest",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -b master",
+    "preview": "netlify deploy --dir=./build",
+    "deploy": "netlify deploy --dir=./build --prod",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
