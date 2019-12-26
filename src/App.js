@@ -7,6 +7,7 @@ import { Menu } from "./Components/UI/";
 import { CoffeeButton } from "./Components/UI/Button";
 import "./assets/css/main.css";
 import "./assets/css/menu.css";
+import "./assets/fonts/aleo/style.css";
 
 const PageWrapper = styled.div`
   text-align: center;
