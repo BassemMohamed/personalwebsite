@@ -7,7 +7,7 @@ const Menu = () => {
   let { pathname } = useLocation();
 
   return (
-    <Slide isOpen={true} pageWrapId={"page-wrapper"}>
+    <Slide pageWrapId={"page-wrapper"}>
       {MainRoutes.map(route => {
         let className = "";
         className += pathname === route.key ? "active " : "";
