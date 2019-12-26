@@ -4,21 +4,24 @@ import { slide as Slide } from "react-burger-menu";
 import MainRoutes from "../../../Routes/MainRoutes";
 
 const Menu = () => {
-  let location = useLocation();
+  let { pathname } = useLocation();
 
   return (
-    <Slide isOpen={false} pageWrapId={"page-wrapper"}>
-      {MainRoutes.map(route => (
-        <div
-          key={route.key}
-          className={location.pathname === route.key ? "active" : ""}
-        >
-          <Link to={route.key}>
-            {route.icon}
-            {route.name}
-          </Link>
-        </div>
-      ))}
+    <Slide isOpen={true} pageWrapId={"page-wrapper"}>
+      {MainRoutes.map(route => {
+        let className = "";
+        className += pathname === route.key ? "active " : "";
+        className += route.disabled ? "disabled " : "";
+        return (
+          <div className={className} key={route.key}>
+            <Link to={route.key}>
+              {route.icon}
+              {route.name}
+              {route.description && <span>- {route.description}</span>}
+            </Link>
+          </div>
+        );
+      })}
     </Slide>
   );
 };

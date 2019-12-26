@@ -8,6 +8,11 @@ const TimelinePage = ({ className }) => (
     <Timeline
       data={[
         {
+          header: "Birthday! 🎂",
+          date: "28 June 1994",
+          markdownText: "I came to life that day! 🎉"
+        },
+        {
           header: "Graduation! 🎓",
           date: "May 2017",
           markdownText:
