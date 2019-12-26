@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import MainRoutes from "./Routes/MainRoutes";
 import { PostPage, NotFoundPage } from "./Components/Pages";
 import { Menu } from "./Components/UI/";
-import { CoffeeIcon } from "./Components/UI/Icon";
+import { CoffeeButton } from "./Components/UI/Button";
 import "./assets/css/main.css";
 import "./assets/css/menu.css";
 // For the coffe icon
@@ -37,7 +37,7 @@ class App extends React.Component {
             <Route path={`/post/:postId`} component={PostPage} />
             <Route path="*" component={NotFoundPage} />
           </Switch>
-          <CoffeeIcon />
+          <CoffeeButton />
         </PageWrapper>
       </Router>
     );

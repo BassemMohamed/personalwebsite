@@ -27,9 +27,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "preview": "react-scripts build && netlify deploy --dir=./build",
+    "deploy": "react-scripts build && netlify deploy --dir=./build --prod",
     "jest": "jest",
-    "preview": "netlify deploy --dir=./build",
-    "deploy": "netlify deploy --dir=./build --prod",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
