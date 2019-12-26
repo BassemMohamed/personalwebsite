@@ -28,8 +28,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "preview": "react-scripts build && netlify deploy --dir=./build",
-    "deploy": "react-scripts build && netlify deploy --dir=./build --prod",
+    "preview": "netlify deploy --dir=./build",
+    "deploy": "sh ./deploy.sh",
     "jest": "jest",
     "eject": "react-scripts eject"
   },
