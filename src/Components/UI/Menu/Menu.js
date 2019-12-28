@@ -14,20 +14,16 @@ const Menu = () => {
   return (
     <Slide
       isOpen={open}
-      onStateChange={onStateChange}
       pageWrapId={"page-wrapper"}
+      onStateChange={onStateChange}
     >
       {MainRoutes.map(route => {
         let className = "";
         className += pathname === route.key ? "active " : "";
         className += route.disabled ? "disabled " : "";
         return (
-          <div
-            key={route.key}
-            className={className}
-            onClick={() => setOpen(false)}
-          >
-            <Link to={route.key}>
+          <div key={route.key} className={className}>
+            <Link to={route.key} onClick={() => setOpen(false)}>
               {route.icon}
               {route.name}
               {route.description && <span>- {route.description}</span>}
