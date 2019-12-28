@@ -11,10 +11,10 @@ import "./assets/fonts/aleo/style.css";
 
 const PageWrapper = styled.div`
   text-align: center;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
 
   @media (min-width: 450px) {
-    padding: 3rem 0;
+    padding: 3.5rem 0;
   }
 `;
 

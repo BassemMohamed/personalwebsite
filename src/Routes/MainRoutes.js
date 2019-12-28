@@ -4,6 +4,7 @@ import {
   QuotePage,
   StackPage,
   TimelinePage,
+  BookPage,
   BlogPage
 } from "../Components/Pages";
 
@@ -46,6 +47,13 @@ export default [
     component: QuotePage,
     exact: true,
     icon: <i className="fas fa-quote-left"></i>
+  },
+  {
+    name: "Books",
+    key: "/books",
+    component: BookPage,
+    exact: true,
+    icon: <i className="fas fa-book"></i>
   },
   {
     name: "Hike The World!",
