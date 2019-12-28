@@ -35,7 +35,7 @@ button:focus {
   outline: none;
 }
 
-/* Base font in pexels */
+/* Base font in pixels */
 html,
 body {
   font-size: 14px;
@@ -77,10 +77,6 @@ td,
 th,
 p {
   font-size: 1rem;
+  line-height: 135%;
   font-family: "Aleo Light";
-}
-
-strong,
-b {
-  font-family: "Aleo Bold";
 }

@@ -42,22 +42,45 @@ const HomePage = () => {
         <div>
           <Text.Label>Bassem Mohamed</Text.Label>
           <p>
-            Hey, Welcome to Bassem Mohamed’s personal space. Bassem is a
-            computer science graduate since 2017, super passionate about
-            technology and programming, started his career as a full stack web
-            developer in a digital marketing agency, where he spent a full year
-            building websites for big brands like Nestle, Creative closets and
-            Aramex.
+            Hey there!! Bassem is a 2017 computer science graduate, super
+            passionate about technology and programming. He has been working as
+            a software engineer for a couple of years now. He kick started his
+            career working as a full-stack web developer in a{" "}
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://www.beyond-creation.net/"
+            >
+              digital marketing agency
+            </a>{" "}
+            where he spent a full year building websites for big brands like
+            Nestle, Creative closets and Aramex.
           </p>
           <p>
-            Now, He is working as a <b>frontend</b> developer at seal-software,
-            The leader in AI-powered contract analytics, discovery & data
+            Choosing <b>frontend</b> as his speciality, He started working as a
+            frontend developer at{" "}
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://www.seal-software.com/"
+            >
+              seal-software
+            </a>
+            , The leader in AI-powered contract analytics, discovery & data
             extraction.
           </p>
           <p>
-            Also, Bassem wants to become a <b>writer</b> someday. Late 2018 He
-            started blogging on dev.to, Right now he published <b>10+</b> posts
-            that have <b>22,000+</b> total post views.
+            Also, Bassem wants to become a <b>writer</b> someday. Late 2018 He
+            started writing technical blog posts on{" "}
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://dev.to/bassemmohamed"
+            >
+              dev.to
+            </a>
+            , Right now he published <b>12+</b> posts that have <b>26,000+</b>{" "}
+            total post views.
           </p>
         </div>
       </HomeWrapper>
