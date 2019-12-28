@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Text, Card, Widget } from "../";
+import { Text, Card } from "../";
 
 const LatestDom = styled.div`
   padding-top: 0.5rem;
