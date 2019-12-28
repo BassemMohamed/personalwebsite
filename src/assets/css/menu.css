@@ -37,7 +37,7 @@
 .bm-menu {
   background: #555;
   padding: 1rem 1rem 0;
-  font-size: 1.15em;
+  font-size: 1.15rem;
 }
 
 .bm-morph-shape {
@@ -45,7 +45,7 @@
 }
 
 .bm-item-list {
-  padding: 0.8em;
+  padding: 0 1rem;
 }
 
 .bm-item a {
@@ -71,7 +71,7 @@
 
 .bm-item {
   display: inline-block;
-  margin: 1rem 0;
+  padding: 0.5rem 0;
   outline: none;
 }
 
