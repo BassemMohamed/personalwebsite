@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import BlogPosts from "../../../posts";
-import { Text, Latest, SocialBar } from "../../UI";
+import { Text, Latest, Widget } from "../../UI";
 
 const HomeWrapper = styled.section`
   margin: 0 auto;
@@ -31,7 +31,7 @@ const HomePage = () => {
             alt="Bassem Mohamed"
           />
         </AvatarWrapper>
-        <SocialBar
+        <Widget.SocialBar
           TwitterFlag
           LinkedinFlag
           GithubFlag

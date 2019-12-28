@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import css from "./TimelinePage.style";
-import { Timeline } from "../../UI";
+import { Widget } from "../../UI";
 
 const TimelinePage = ({ className }) => (
   <section className={className}>
-    <Timeline
+    <Widget.Timeline
       data={[
         {
           header: "Birthday! 🎂",

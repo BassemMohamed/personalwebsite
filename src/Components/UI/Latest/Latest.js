@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Text, Card } from "../";
+import { Text, Card, Widget } from "../";
 
 const LatestDom = styled.div`
   padding-top: 0.5rem;
@@ -11,7 +11,7 @@ const LatestDom = styled.div`
       margin: 0 auto;
     }
   }
-  > div > h2 {
+  h2 {
     text-align: center;
     margin-bottom: 0.5rem;
   }
@@ -27,7 +27,7 @@ const LatestDom = styled.div`
       margin: 0.5rem;
       width: 50%;
     }
-    > div > h2 {
+    h2 {
       text-align: left;
     }
   }
