@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import BlogPosts from "../../../posts";
-import { Text, Latest, Widget } from "../../UI";
+import { Text, Widget } from "../../UI";
 
 const HomeWrapper = styled.section`
   margin: 0 auto;
@@ -21,7 +20,6 @@ const AvatarWrapper = styled.div`
 `;
 
 const HomePage = () => {
-  const latestPost = BlogPosts[BlogPosts.length - 1];
   return (
     <>
       <HomeWrapper>
@@ -84,7 +82,6 @@ const HomePage = () => {
           </p>
         </div>
       </HomeWrapper>
-      <Latest post={latestPost} />
     </>
   );
 };
