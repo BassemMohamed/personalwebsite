@@ -36,7 +36,6 @@ export default [
   {
     name: "Tech Stack",
     key: "/stack",
-    description: "Always remember! Quality over Quantity.",
     component: StackPage,
     exact: true,
     icon: <i className="fas fa-layer-group"></i>

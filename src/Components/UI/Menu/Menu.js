@@ -49,6 +49,13 @@ const Menu = ({ className }) => {
             date={latestPost.published}
           />
         </div>
+        <p>
+          Built with{" "}
+          <span role="img" aria-label="heart">
+            ❤️
+          </span>{" "}
+          by Bassem
+        </p>
       </Slide>
     </div>
   );
