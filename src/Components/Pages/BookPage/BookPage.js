@@ -9,10 +9,13 @@ class BookPage extends React.Component {
     return (
       <section className={className}>
         <div className="grid">
-          <Widget.GoodReads shelf="currently-reading" />
-          <Widget.GoodReads shelf="favorites" />
+          <Widget.GoodReads
+            name="Currently Reading"
+            shelf="currently-reading"
+          />
+          <Widget.GoodReads name="Favorites" shelf="favorites" />
         </div>
-        <Widget.GoodReads shelf="read" />
+        <Widget.GoodReads name="read" shelf="read" />
       </section>
     );
   }

@@ -1,6 +1,8 @@
 import React from "react";
 import axios from "axios";
 import styled from "styled-components";
+import { Text } from "../../";
+import Book from "./Book";
 import Xml2JsUtils from "../../../../utils/xml2js-utils";
 import css from "./GoodReads.style";
 
@@ -30,17 +32,14 @@ class GoodReads extends React.Component {
   }
 
   render() {
+    const { name, className } = this.props;
     const { books } = this.state;
     return (
-      <div>
-        {books &&
-          books.map(book => (
-            <div key={book.id} title={book.title}>
-              <a href={book.link} target="_blank" rel="noopener noreferrer">
-                <img alt={book} src={book.image_url} />
-              </a>
-            </div>
-          ))}
+      <div className={className}>
+        <Text.Label>{name}</Text.Label>
+        <div>
+          {books && books.map(book => <Book key={book.id} book={book} />)}
+        </div>
       </div>
     );
   }
