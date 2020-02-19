@@ -1,9 +1,9 @@
 # bassemmohamed.me
 <!--- These are examples. See https://shields.io --->
-![GitHub repo size](https://img.shields.io/github/repo-size/bassemmohamed/Movies-React-Library)
-[![GitHub contributors](https://img.shields.io/github/contributors/bassemmohamed/Movies-React-Library)](https://github.com/BassemMohamed/Movies-React-Library/graphs/contributors)
-[![GitHub stars](https://img.shields.io/github/stars/bassemmohamed/Movies-React-Library?style=social)](https://github.com/BassemMohamed/Movies-React-Library/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/bassemmohamed/Movies-React-Library?style=social)](https://github.com/BassemMohamed/Movies-React-Library/network/members)
+![GitHub repo size](https://img.shields.io/github/repo-size/bassemmohamed/bassemmohamed.me)
+[![GitHub contributors](https://img.shields.io/github/contributors/bassemmohamed/bassemmohamed.me)](https://github.com/BassemMohamed/bassemmohamed.me/graphs/contributors)
+[![GitHub stars](https://img.shields.io/github/stars/bassemmohamed/bassemmohamed.me?style=social)](https://github.com/BassemMohamed/bassemmohamed.me/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/bassemmohamed/bassemmohamed.me?style=social)](https://github.com/BassemMohamed/bassemmohamed.me/network/members)
 [![Twitter Follow](https://img.shields.io/twitter/follow/bassemmohamed94?style=social)](https://twitter.com/BassemMohamed94)
 
 ### Personal Website and Blog
@@ -27,8 +27,8 @@ To install, follow these steps:
 
 ## Features
 
-- About Page
-- Blog
+- Bio & Personal Info
+- Blog, 12+ Articles
 - Goodreads Integration
 
 ## Contact
