@@ -1,11 +1,13 @@
 import React from "react";
 import { mount } from "enzyme";
-import Timeline from "./Timeline";
+import Book from "./Book";
 
-describe("<Timeline />", () => {
+describe("<Book />", () => {
   let Wrapper;
   beforeAll(() => {
-    Wrapper = mount(<Timeline data={[]} />);
+    Wrapper = mount(
+      <Book book={{ title: "title", link: "link", image_url: "image_url" }} />
+    );
   });
 
   it("renders without crashing", () => {

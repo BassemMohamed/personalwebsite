@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const SocialItem = styled.a`
+const SocialItemStyled = styled.a`
   :hover {
     i {
       opacity: 0.7;
@@ -15,15 +15,15 @@ const SocialItem = styled.a`
   }
 `;
 
-const SocialBar = ({ title, href, fontAwesomeClass }) => (
-  <SocialItem
+const SocialItem = ({ title, href, fontAwesomeClass }) => (
+  <SocialItemStyled
     title={title}
     target="_blank"
     rel="noreferrer noopener"
     href={href}
   >
     <i className={fontAwesomeClass} />
-  </SocialItem>
+  </SocialItemStyled>
 );
 
-export default SocialBar;
+export default SocialItem;

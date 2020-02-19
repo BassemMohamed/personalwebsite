@@ -1,11 +1,11 @@
 import React from "react";
 import { mount } from "enzyme";
-import Timeline from "./Timeline";
+import SocialItem from "./SocialItem";
 
-describe("<Timeline />", () => {
+describe("<SocialItem />", () => {
   let Wrapper;
   beforeAll(() => {
-    Wrapper = mount(<Timeline data={[]} />);
+    Wrapper = mount(<SocialItem />);
   });
 
   it("renders without crashing", () => {
