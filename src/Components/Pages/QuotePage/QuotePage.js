@@ -2,13 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import { Text } from "../../UI";
 
-const QuotesWrapper = styled.section`
+const QuoteWrapper = styled.section`
   margin: 0 auto;
   max-width: 600px;
 `;
 
-const QuotesPage = () => (
-  <QuotesWrapper>
+const QuotePage = () => (
+  <QuoteWrapper>
     <Text.Quote
       author="Aristotle"
       authorPage="https://en.wikipedia.org/wiki/Aristotle"
@@ -46,7 +46,7 @@ const QuotesPage = () => (
     >
       If the service is ‘free’, you are not the customer but the product
     </Text.Quote>
-  </QuotesWrapper>
+  </QuoteWrapper>
 );
 
-export default QuotesPage;
+export default QuotePage;
