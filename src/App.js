@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import MainRoutes from "./Routes/MainRoutes";
+import BlogPosts from "./posts";
 import { PostPage, NotFoundPage } from "./Components/Pages";
 import { Menu } from "./Components/UI/";
 import { CoffeeButton } from "./Components/UI/Button";
@@ -22,7 +23,7 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <Menu />
+        <Menu routes={MainRoutes} post={BlogPosts[BlogPosts.length - 1]} />
         <PageWrapper id="page-wrapper">
           <Switch>
             {MainRoutes.map(route => (

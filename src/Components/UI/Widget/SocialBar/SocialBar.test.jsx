@@ -4,7 +4,7 @@ import SocialBar from "./SocialBar";
 
 describe("<SocialBar />", () => {
   let Wrapper;
-  beforeEach(() => {
+  beforeAll(() => {
     Wrapper = mount(<SocialBar />);
   });
   it("renders without crashing", () => {

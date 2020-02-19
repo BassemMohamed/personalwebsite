@@ -4,9 +4,10 @@ import Quote from "./Quote";
 
 describe("<Quote />", () => {
   let Wrapper;
-  beforeEach(() => {
+  beforeAll(() => {
     Wrapper = mount(<Quote />);
   });
+
   it("renders without crashing", () => {
     expect(Wrapper).not.toBeNull();
   });

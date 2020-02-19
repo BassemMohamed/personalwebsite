@@ -9,7 +9,7 @@ describe("<Button />", () => {
   const children = "children";
   const handleClick = jest.fn();
 
-  beforeEach(() => {
+  beforeAll(() => {
     Wrapper = mount(
       <Button onClick={handleClick} className={className}>
         {children}

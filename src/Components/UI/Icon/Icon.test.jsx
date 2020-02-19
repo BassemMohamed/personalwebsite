@@ -4,10 +4,19 @@ import Icon from "./Icon";
 
 describe("<Icon />", () => {
   let Wrapper;
-  beforeEach(() => {
-    Wrapper = mount(<Icon />);
+  beforeAll(() => {
+    Wrapper = mount(<Icon name="IconName" imageLink="IconImage" />);
   });
+
   it("renders without crashing", () => {
     expect(Wrapper).not.toBeNull();
+  });
+
+  it("renders name on prop", () => {
+    expect(Wrapper.find("p")).toHaveLength(1);
+  });
+
+  it("renders image on prop", () => {
+    expect(Wrapper.find("img")).toHaveLength(1);
   });
 });

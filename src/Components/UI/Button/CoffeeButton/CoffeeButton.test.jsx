@@ -1,13 +1,12 @@
 import React from "react";
 import { mount } from "enzyme";
-import Label from "./Label";
+import CoffeeButton from "./CoffeeButton";
 
-describe("<Label />", () => {
+describe("<CoffeeButton />", () => {
   let Wrapper;
   beforeAll(() => {
-    Wrapper = mount(<Label children="text" />);
+    Wrapper = mount(<CoffeeButton />);
   });
-
   it("renders without crashing", () => {
     expect(Wrapper).not.toBeNull();
   });

@@ -4,7 +4,7 @@ import Card from "./Card";
 
 describe("<Card />", () => {
   let Wrapper;
-  beforeEach(() => {
+  beforeAll(() => {
     Wrapper = mount(<Card />);
   });
   it("renders without crashing", () => {

@@ -2,19 +2,41 @@ import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { slide as Slide } from "react-burger-menu";
 import styled from "styled-components";
-import MainRoutes from "../../../Routes/MainRoutes";
-import BlogPosts from "../../../posts";
 import { Text, Card } from "../";
 import css from "./Menu.style";
 
-const latestPost = BlogPosts[BlogPosts.length - 1];
-const Menu = ({ className }) => {
+const Menu = ({ className, routes, post }) => {
   let { pathname } = useLocation();
   let [open, setOpen] = useState(false);
 
   const onStateChange = state => {
     setOpen(state.isOpen);
   };
+
+  const LatestPost = ({ post }) => (
+    <div className="bm-item">
+      <Text.Label>Latest Post</Text.Label>
+      <Card
+        size="small"
+        key={post.key}
+        name={post.name}
+        image={post.coverImage}
+        url={`${window.location.origin}/post/${post.key}`}
+        desc={post.description}
+        date={post.published}
+      />
+    </div>
+  );
+
+  const MenuFooter = () => (
+    <p className="bm-item">
+      Built with{" "}
+      <span role="img" aria-label="heart">
+        ❤️
+      </span>{" "}
+      by Bassem
+    </p>
+  );
 
   return (
     <div className={className}>
@@ -23,39 +45,23 @@ const Menu = ({ className }) => {
         pageWrapId={"page-wrapper"}
         onStateChange={onStateChange}
       >
-        {MainRoutes.map(route => {
-          let className = "";
-          className += pathname === route.key ? "active " : "";
-          className += route.disabled ? "disabled " : "";
-          return (
-            <div key={route.key} className={className}>
-              <Link to={route.key} onClick={() => setOpen(false)}>
-                {route.icon}
-                {route.name}
-                {route.description && <span>- {route.description}</span>}
-              </Link>
-            </div>
-          );
-        })}
-        <div>
-          <Text.Label>Latest Post</Text.Label>
-          <Card
-            size="small"
-            key={latestPost.key}
-            name={latestPost.name}
-            image={latestPost.coverImage}
-            url={`${window.location.origin}/post/${latestPost.key}`}
-            desc={latestPost.description}
-            date={latestPost.published}
-          />
-        </div>
-        <p>
-          Built with{" "}
-          <span role="img" aria-label="heart">
-            ❤️
-          </span>{" "}
-          by Bassem
-        </p>
+        {routes &&
+          routes.map(route => {
+            let className = "";
+            className += pathname === route.key ? "active " : "";
+            className += route.disabled ? "disabled " : "";
+            return (
+              <div key={route.key} className={className}>
+                <Link to={route.key} onClick={() => setOpen(false)}>
+                  {route.icon}
+                  {route.name}
+                  {route.description && <span>- {route.description}</span>}
+                </Link>
+              </div>
+            );
+          })}
+        {post && <LatestPost post={post} />}
+        <MenuFooter />
       </Slide>
     </div>
   );

@@ -4,7 +4,7 @@ import Timeline from "./Timeline";
 
 describe("<Timeline />", () => {
   let Wrapper;
-  beforeEach(() => {
+  beforeAll(() => {
     Wrapper = mount(<Timeline data={[]} />);
   });
   it("renders without crashing", () => {
