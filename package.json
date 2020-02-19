@@ -6,6 +6,7 @@
   "dependencies": {
     "@babel/core": "^7.6.2",
     "@babel/polyfill": "^7.6.0",
+    "axios": "^0.19.2",
     "babel-core": "^6.26.3",
     "babel-jest": "^24.9.0",
     "core-js": "^2.6.9",
@@ -23,15 +24,17 @@
     "react-markdown": "^4.1.0",
     "react-router-dom": "^5.0.1",
     "react-scripts": "^3.3.1",
-    "styled-components": "^4.3.2"
+    "styled-components": "^4.3.2",
+    "whatwg-fetch": "^3.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "jest": "jest --watch",
+    "coverage": "jest --coverage",
     "preview": "netlify deploy --dir=./build",
     "deploy": "sh ./deploy.sh",
-    "jest": "jest",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -50,9 +53,29 @@
     ]
   },
   "jest": {
-    "collectCoverageFrom": [
-      "src/**/*.{js,jsx,mjs}"
+    "verbose": false,
+    "coverageReporters": [
+      "lcov",
+      "text-summary"
     ],
+    "setupFiles": [
+      "<rootDir>/config/polyfill.js"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/config/setupTest.js"
+    ],
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/node_modules/"
+    ],
+    "collectCoverageFrom": [
+      "src/Components/Pages/**/{!(index),}.js",
+      "src/Components/UI/**/{!(index),}.js"
+    ],
+    "transform": {
+      "^.+\\.(js|jsx|mjs)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
+      "^(?!.*\\.(js|jsx|mjs|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+    },
     "transformIgnorePatterns": [
       "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$"
     ]

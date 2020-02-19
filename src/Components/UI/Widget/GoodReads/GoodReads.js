@@ -1,28 +1,50 @@
 import React from "react";
+import axios from "axios";
 import styled from "styled-components";
-import { GoodreadsBookshelf } from "react-goodreads-shelf";
-import { Text } from "../../";
+import Xml2JsUtils from "../../../../utils/xml2js-utils";
 import css from "./GoodReads.style";
 
-const label = {
-  "currently-reading": "Currently Reading",
-  favorites: "Favorites",
-  read: "Read"
-};
+const USER_ID = "90168658";
+const API_KEY = "wBjkuwO0B1xt2PBeh4Kw";
+class GoodReads extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      books: []
+    };
+  }
 
-const GoodReads = ({ className, shelf }) => {
-  return (
-    <div className={className}>
-      <Text.Label>{label[shelf]}</Text.Label>
+  componentDidMount() {
+    const { limit, shelf, sort } = this.props;
+    axios
+      .get(
+        `https://cors-anywhere.herokuapp.com/https://www.goodreads.com/review/list/${USER_ID}?key=${API_KEY}&per_page=${limit ||
+          10}&shelf=${shelf}&sort=${sort || "date_read"}`
+      )
+      .then(res => {
+        const books = Xml2JsUtils.parse(res.data).GoodreadsResponse.books.book;
+        this.setState({
+          books: Array.isArray(books) ? books : [books]
+        });
+      });
+  }
 
-      <GoodreadsBookshelf
-        shelf={shelf}
-        userId={"90168658"}
-        apiKey={"wBjkuwO0B1xt2PBeh4Kw"}
-      />
-    </div>
-  );
-};
+  render() {
+    const { books } = this.state;
+    return (
+      <div>
+        {books &&
+          books.map(book => (
+            <div key={book.id} title={book.title}>
+              <a href={book.link} target="_blank" rel="noopener noreferrer">
+                <img alt={book} src={book.image_url} />
+              </a>
+            </div>
+          ))}
+      </div>
+    );
+  }
+}
 
 export default styled(GoodReads)`
   ${css}

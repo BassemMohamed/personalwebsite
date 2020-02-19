@@ -23,6 +23,6 @@ describe("<Menu />", () => {
   });
 
   it("renders post on prop", () => {
-    expect(Wrapper.find("Card")).toHaveLength(1);
+    expect(Wrapper.find("Card")).toHaveLength(2);
   });
 });

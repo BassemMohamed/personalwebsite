@@ -1,11 +1,11 @@
 import React from "react";
-import { mount } from "enzyme";
+import { shallow } from "enzyme";
 import App from "./App";
 
 describe("<App />", () => {
   let Wrapper;
   beforeAll(() => {
-    Wrapper = mount(<App />);
+    Wrapper = shallow(<App />);
   });
 
   it("renders without crashing", () => {
