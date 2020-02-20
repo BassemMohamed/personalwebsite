@@ -5,7 +5,8 @@ import {
   StackPage,
   TimelinePage,
   BookPage,
-  BlogPage
+  BlogPage,
+  ContactPage
 } from "../Components/Pages";
 
 export default [
@@ -65,6 +66,7 @@ export default [
   {
     name: "Contact Me",
     key: "/contact",
+    component: ContactPage,
     exact: true,
     icon: <i className="fas fa-envelope"></i>
   }

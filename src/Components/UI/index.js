@@ -4,6 +4,8 @@ import Header from "./Header";
 import Icon from "./Icon";
 import Widget from "./Widget";
 import Text from "./Text";
+import TextField from "./TextField";
+import TextArea from "./TextArea";
 import Menu from "./Menu";
 
 export { Button };
@@ -12,4 +14,6 @@ export { Header };
 export { Icon };
 export { Widget };
 export { Text };
+export { TextField };
+export { TextArea };
 export { Menu };
