@@ -80,3 +80,18 @@ p {
   line-height: 135%;
   font-family: "Aleo Light";
 }
+
+p::selection,
+b::selection,
+strong::selection,
+li::selection,
+td::selection,
+th::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection {
+  background: #ffa500;
+}

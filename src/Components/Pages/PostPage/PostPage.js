@@ -36,16 +36,19 @@ class PostPage extends React.Component {
   }
 
   render() {
+    const { className } = this.props;
     const { post, markdownText } = this.state;
     return (
-      <div className={this.props.className}>
+      <article className={className}>
         <div className="post_cover">
           <img alt={post.name} src={post.coverImage} />
           <Text.Label>{post.name}</Text.Label>
           <p>Published: {post.published}</p>
         </div>
-        <ReactMarkdown source={markdownText} />
-      </div>
+        <div className="post_body">
+          <ReactMarkdown source={markdownText} />
+        </div>
+      </article>
     );
   }
 }

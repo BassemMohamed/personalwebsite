@@ -5,58 +5,69 @@ export default css`
   text-align: left;
   max-width: 750px;
 
+  img {
+    width: 100%;
+    height: auto;
+  }
+
   .post_cover {
     border-bottom: 1px solid #555;
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 1rem 0;
-  }
+  .post_body {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 2rem 0 1rem 0;
+    }
 
-  li,
-  p {
-    margin-bottom: 0.5rem;
-  }
+    li,
+    p {
+      margin-bottom: 0.8rem;
+    }
 
-  p > img {
-    width: 100%;
-    margin: 0.5rem 0;
-  }
+    li,
+    td,
+    th,
+    p {
+      /* font-size: 1.2rem; */
+      line-height: 150%;
+    }
 
-  img {
-    width: 100%;
-  }
+    p > img {
+      width: 100%;
+      margin: 0.5rem 0;
+    }
 
-  table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 1rem 0;
-  }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 1rem 0;
+    }
 
-  table,
-  th,
-  td {
-    border: 1px solid #555;
-  }
+    table,
+    th,
+    td {
+      border: 1px solid #555;
+    }
 
-  th,
-  td {
-    padding: 0.25rem;
-  }
+    th,
+    td {
+      padding: 0.25rem;
+    }
 
-  pre {
-    padding: 0.5rem;
-  }
-  pre,
-  pre code {
-    overflow: scroll;
-    background-color: antiquewhite;
+    pre {
+      padding: 0.5rem;
+    }
+    pre,
+    pre code {
+      overflow: scroll;
+      background-color: antiquewhite;
+    }
   }
 `;
