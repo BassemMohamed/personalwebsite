@@ -61,5 +61,11 @@ export default [
     description: "Coming soon!",
     exact: true,
     icon: <i className="fas fa-hiking"></i>
+  },
+  {
+    name: "Contact Me",
+    key: "/contact",
+    exact: true,
+    icon: <i className="fas fa-envelope"></i>
   }
 ];
