@@ -15,24 +15,21 @@ export default css`
   }
 
   form h2 {
-    text-align: left;
+    width: 100%;
     margin-bottom: 5px;
   }
 
-  form input {
-    width: 50%;
-  }
   form a,
+  form input,
   form textarea {
-    width: 100%;
+    display: block;
+    width: calc(100% - 22px);
+  }
+  form a {
+    width: calc(100% - 24px);
   }
 
   form > div {
-    padding: 15px 0;
-  }
-  form > div:nth-child(1),
-  form > div:nth-child(2) {
-    display: inline-block;
-    width: 50%;
+    padding: 2.5px 0;
   }
 `;

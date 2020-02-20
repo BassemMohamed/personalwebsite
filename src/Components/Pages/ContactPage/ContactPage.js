@@ -9,18 +9,10 @@ class ContactPage extends React.Component {
     return (
       <section className={className}>
         <form name="contact" method="POST" data-netlify="true">
-          <div>
-            <Text.Label>Your Name</Text.Label>
-            <TextField placeholder="Please enter your name" type="text" />
-          </div>
-          <div>
-            <Text.Label>Your Email</Text.Label>
-            <TextField placeholder="Please enter your email" type="email" />
-          </div>
-          <div>
-            <Text.Label>Your Message</Text.Label>
-            <TextArea placeholder="Please enter your message" />
-          </div>
+          <Text.Label>Contact Me</Text.Label>
+          <TextField placeholder="Your name" type="text" />
+          <TextField placeholder="Your email" type="email" />
+          <TextArea placeholder="Your message" />
           <Button type="submit">Send</Button>
         </form>
       </section>
