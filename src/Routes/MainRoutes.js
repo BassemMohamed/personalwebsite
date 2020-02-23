@@ -67,8 +67,6 @@ export default [
     name: "Contact Me",
     key: "/contact",
     component: ContactPage,
-    disabled: true,
-    description: "Coming soon!",
     exact: true,
     icon: <i className="fas fa-envelope"></i>
   }
