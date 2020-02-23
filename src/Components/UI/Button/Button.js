@@ -4,8 +4,9 @@ import css from "./Button.style";
 
 const Button = props => {
   const { className, children, href, onClick, newTab } = props;
+
   return (
-    <a
+    <button
       className={className}
       target={newTab ? "_blank" : ""}
       href={href}
@@ -13,7 +14,7 @@ const Button = props => {
       {...props}
     >
       {children}
-    </a>
+    </button>
   );
 };
 export default styled(Button)`

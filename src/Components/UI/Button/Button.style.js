@@ -8,6 +8,8 @@ export default css`
   border: 2px solid #555;
   margin-bottom: 1em;
   cursor: pointer;
+  width: 100%;
+
   :hover {
     color: #fff;
     background-color: #555;

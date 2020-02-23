@@ -49,6 +49,12 @@
     <title>Bassem's Blog</title>
   </head>
   <body>
+    <!-- This form is a workaround for Netlify Forms, https://www.netlify.com/blog/2017/07/20/how-to-integrate-netlifys-form-handling-in-a-react-app/ -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+    </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <main id="root"></main>
   </body>
