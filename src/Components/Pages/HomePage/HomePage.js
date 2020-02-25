@@ -14,8 +14,8 @@ const AvatarWrapper = styled.div`
   img {
     width: 100%;
     max-width: 300px;
-    height: 400px;
     border-radius: 20%;
+    height: auto;
   }
 `;
 
