@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import MainRoutes from "./routes";
-import BlogPosts from "./posts";
+import BlogPosts from "./assets/posts";
 import { PostPage, NotFoundPage } from "./Pages";
 import { Menu } from "./UI/";
 import { CoffeeButton } from "./UI/Button";

@@ -1,7 +1,7 @@
 import React from "react";
 import { mount } from "enzyme";
 import PostPage from "./PostPage";
-import BlogPosts from "../../../posts/";
+import BlogPosts from "../../assets/posts";
 
 describe("<PostPage />", () => {
   let Wrapper;

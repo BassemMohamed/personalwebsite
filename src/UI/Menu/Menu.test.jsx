@@ -2,7 +2,7 @@ import React from "react";
 import { mount } from "enzyme";
 import Menu from "./Menu";
 import { BrowserRouter as Router } from "react-router-dom";
-import MainRoutes from "../../../Routes/MainRoutes";
+import MainRoutes from "../../routes";
 
 describe("<Menu />", () => {
   let Wrapper;
