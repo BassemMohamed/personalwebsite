@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import MainRoutes from "./Routes/MainRoutes";
+import MainRoutes from "./routes";
 import BlogPosts from "./posts";
-import { PostPage, NotFoundPage } from "./Components/Pages";
-import { Menu } from "./Components/UI/";
-import { CoffeeButton } from "./Components/UI/Button";
+import { PostPage, NotFoundPage } from "./Pages";
+import { Menu } from "./UI/";
+import { CoffeeButton } from "./UI/Button";
 import "./assets/css/main.css";
 import "./assets/css/menu.css";
 import "./assets/fonts/aleo/style.css";

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import BlogPosts from "../../../posts";
+import BlogPosts from "../../assets/posts";
 import css from "./PostPage.style";
 import ReactMarkdown from "react-markdown";
 import { Text } from "../../UI";
@@ -19,7 +19,7 @@ class PostPage extends React.Component {
     } = this.props;
 
     const post = BlogPosts.filter(item => item.key === postId)[0];
-    fetch(require(`../../../posts/${postId}.markdown`))
+    fetch(require(`../../assets/posts/${postId}.markdown`))
       .then(response => {
         return response.text();
       })

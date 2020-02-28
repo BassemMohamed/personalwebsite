@@ -25,7 +25,7 @@ const HomePage = () => {
       <HomeWrapper>
         <AvatarWrapper>
           <img
-            src={require("../../../assets/images/bassem.jpeg")}
+            src={require("../../assets/images/bassem.jpeg")}
             alt="Bassem Mohamed"
           />
         </AvatarWrapper>

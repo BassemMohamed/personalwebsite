@@ -3,7 +3,7 @@ import axios from "axios";
 import styled from "styled-components";
 import { Text } from "../../";
 import Book from "./Book";
-import Xml2JsUtils from "../../../../utils/xml2js-utils";
+import Xml2JsUtils from "../../../utils/xml2js-utils";
 import css from "./GoodReads.style";
 
 class GoodReads extends React.Component {

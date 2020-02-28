@@ -7,7 +7,7 @@ import {
   BookPage,
   BlogPage,
   ContactPage
-} from "../Components/Pages";
+} from "./Pages";
 
 export default [
   {
