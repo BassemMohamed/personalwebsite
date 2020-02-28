@@ -75,6 +75,12 @@ textarea {
   font-family: "Aleo Regular";
 }
 
+input,
+button,
+textarea {
+  font-size: 1rem;
+}
+
 li,
 td,
 th,

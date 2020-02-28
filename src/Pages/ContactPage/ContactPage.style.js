@@ -16,7 +16,7 @@ export default css`
 
   form h2 {
     width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 1rem;
   }
 
   form a,

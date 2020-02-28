@@ -8,5 +8,5 @@ export default css`
   text-align: left;
   transition: 0.5s;
   border: 1px solid #555;
-  margin-bottom: 1em;
+  margin-bottom: 0.5rem;
 `;
