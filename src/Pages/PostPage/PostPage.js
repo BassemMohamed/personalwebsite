@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Helmet } from "react-helmet";
 import BlogPosts from "../../assets/posts";
 import css from "./PostPage.style";
 import ReactMarkdown from "react-markdown";
@@ -39,16 +40,22 @@ class PostPage extends React.Component {
     const { className } = this.props;
     const { post, markdownText } = this.state;
     return (
-      <article className={className}>
-        <div className="post_cover">
-          <img alt={post.name} src={post.coverImage} />
-          <Text.Label>{post.name}</Text.Label>
-          <p>Published: {post.published}</p>
-        </div>
-        <div className="post_body">
-          <ReactMarkdown source={markdownText} />
-        </div>
-      </article>
+      <>
+        <Helmet>
+          <title>{post.name}</title>
+          <meta name="description" content={post.description} />
+        </Helmet>
+        <article className={className}>
+          <div className="post_cover">
+            <img alt={post.name} src={post.coverImage} />
+            <Text.Label>{post.name}</Text.Label>
+            <p>Published: {post.published}</p>
+          </div>
+          <div className="post_body">
+            <ReactMarkdown source={markdownText} />
+          </div>
+        </article>
+      </>
     );
   }
 }
