@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Helmet } from "react-helmet";
 import BlogPosts from "../../assets/posts";
 import { Card, Text } from "../../UI";
 
@@ -45,6 +46,9 @@ class BlogPage extends React.Component {
   render() {
     return (
       <>
+        <Helmet>
+          <title>Bassem Mohamed | A Software Engineer's Blog</title>
+        </Helmet>
         <BlogPageCopy />
         <BlogWrapper>
           {BlogPosts.slice(0)
