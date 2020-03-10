@@ -1,6 +1,7 @@
 import React from "react";
 import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import themes from "./themes";
 import MainRoutes from "./routes";
 import BlogPosts from "./assets/posts";
 import { PostPage, NotFoundPage } from "./Pages";
@@ -9,25 +10,6 @@ import { CoffeeButton } from "./UI/Button";
 import mainStyle from "./assets/css/main.style.js";
 import menuStyle from "./assets/css/menu.style.js";
 import "./assets/fonts/aleo/style.css";
-
-const theme = {
-  main: {
-    colors: {
-      main: "#555",
-      white: "#fff",
-      black: "#000",
-      border: "#EEE",
-      accent: "#FFA500",
-      background: "#F5F5F5"
-    },
-    fonts: {
-      bold: "Aleo Bold",
-      light: "Aleo Light",
-      italic: "Aleo Italic",
-      regular: "Aleo Regular"
-    }
-  }
-};
 
 const GlobalStyle = createGlobalStyle`
   ${mainStyle}
@@ -46,7 +28,7 @@ const PageWrapper = styled.div`
 class App extends React.Component {
   render() {
     return (
-      <ThemeProvider theme={theme.main}>
+      <ThemeProvider theme={themes.btheme}>
         <GlobalStyle />
         <Router>
           <Menu routes={MainRoutes} post={BlogPosts[BlogPosts.length - 1]} />
