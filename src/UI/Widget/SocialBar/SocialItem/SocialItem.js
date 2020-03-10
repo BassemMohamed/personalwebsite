@@ -8,10 +8,10 @@ const SocialItemStyled = styled.a`
     }
   }
   i {
-    font-size: 1.5625rem;
-    color: #555;
     padding: 0 5px;
+    font-size: 1.5625rem;
     text-decoration: none;
+    color: ${props => props.theme.colors.main};
   }
 `;
 

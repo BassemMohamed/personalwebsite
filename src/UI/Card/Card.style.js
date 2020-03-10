@@ -1,14 +1,14 @@
 import { css } from "styled-components";
 
 export default css`
-  color: #555;
+  color: ${props => props.theme.colors.main};
   width: 100%;
   max-width: 500px;
   position: relative;
   cursor: pointer;
   text-align: left;
-  border: 1px solid #dedede;
-  background-color: #fafafa;
+  border: 1px solid ${props => props.theme.colors.border};
+  background-color: ${props => props.theme.colors.white};
 
   .image {
     background-image: url(${({ image }) => image});
@@ -35,6 +35,6 @@ export default css`
   }
 
   :hover {
-    background-color: #f5f5f5;
+    background-color: ${props => props.theme.colors.background};
   }
 `;

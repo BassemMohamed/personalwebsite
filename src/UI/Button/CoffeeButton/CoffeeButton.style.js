@@ -8,8 +8,8 @@ export default css`
   line-height: 35px;
   text-decoration: none;
   display: inline-flex;
-  color: #ffffff;
-  background-color: #ffa500;
+  color: ${props => props.theme.colors.main};
+  background-color: ${props => props.theme.colors.accent};
   border-radius: 5px;
   border: 1px solid transparent;
   padding: 7px 10px 7px 10px;

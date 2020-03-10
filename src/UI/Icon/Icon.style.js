@@ -3,8 +3,8 @@ import { css } from "styled-components";
 export default css`
   padding: 10px;
   margin: 10px;
-  border: 1px solid #eee;
-  background-color: #fafafa;
+  border: 1px solid ${props => props.theme.colors.border};
+  background-color: ${props => props.theme.colors.white};
   img {
     width: 100px;
     height: auto;
@@ -14,6 +14,6 @@ export default css`
   }
 
   :hover {
-    background-color: #f5f5f5;
+    background-color: ${props => props.theme.colors.background};
   }
 `;

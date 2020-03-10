@@ -11,7 +11,7 @@ export default css`
   }
 
   .post_cover {
-    border-bottom: 1px solid #555;
+    border-bottom: 1px solid ${props => props.theme.colors.main};
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
   }
@@ -35,7 +35,6 @@ export default css`
     td,
     th,
     p {
-      /* font-size: 1.2rem; */
       line-height: 150%;
     }
 
@@ -53,7 +52,7 @@ export default css`
     table,
     th,
     td {
-      border: 1px solid #555;
+      border: 1px solid ${props => props.theme.colors.main};
     }
 
     th,
@@ -64,10 +63,11 @@ export default css`
     pre {
       padding: 0.5rem;
     }
+
     pre,
     pre code {
       overflow: scroll;
-      background-color: antiquewhite;
+      background-color: ${props => props.theme.colors.border};
     }
   }
 `;

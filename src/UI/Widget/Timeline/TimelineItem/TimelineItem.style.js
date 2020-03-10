@@ -3,31 +3,31 @@ import { css } from "styled-components";
 export default css`
   padding: 2em 1em 1em;
   position: relative;
-  border-left: 2px solid #555;
+  border-left: 2px solid ${props => props.theme.colors.main};
 
   &::before {
-    content: "${({ date }) => date}";
-    position: absolute;
-    left: 2em;
-    font-weight: bold;
     top: 1em;
+    left: 2em;
     display: block;
-    color: #555;
-    font-family: "Aleo Italic";
     font-weight: 700;
+    font-weight: bold;
+    position: absolute;
     font-size: 0.785rem;
+    font-family: "Aleo Italic";
+    content: "${({ date }) => date}";
+    color: ${props => props.theme.colors.main};
   }
 
   &::after {
+    content: "";
+    top: 0.9em;
+    left: -8px;
     width: 10px;
     height: 10px;
     display: block;
-    top: 0.9em;
+    background: ${props => props.theme.colors.white};
     position: absolute;
-    left: -8px;
     border-radius: 10px;
-    content: "";
-    border: 2px solid #555;
-    background: white;
+    border: 2px solid ${props => props.theme.colors.main};
   }
 `;

@@ -1,12 +1,12 @@
 import { css } from "styled-components";
 
 export default css`
-  display: block;
   padding: 10px;
-  color: #555;
-  background: transparent;
+  display: block;
   text-align: left;
   transition: 0.5s;
-  border: 1px solid #555;
   margin-bottom: 1em;
+  background: transparent;
+  color: ${props => props.theme.colors.main};
+  border: 1px solid ${props => props.theme.colors.main};
 `;

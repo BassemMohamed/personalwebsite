@@ -13,6 +13,6 @@ export default css`
 
   ${Widget.GoodReads} {
     padding: 1rem 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid ${props => props.theme.colors.border};
   }
 `;
