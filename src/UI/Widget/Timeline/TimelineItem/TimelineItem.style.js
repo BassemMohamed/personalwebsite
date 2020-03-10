@@ -13,7 +13,7 @@ export default css`
     font-weight: bold;
     position: absolute;
     font-size: 0.785rem;
-    font-family: "Aleo Italic";
+    font-family: ${props => props.theme.fonts.italic};
     content: "${({ date }) => date}";
     color: ${props => props.theme.colors.main};
   }

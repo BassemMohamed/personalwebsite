@@ -10,7 +10,7 @@ export default css`
     height: auto;
   }
   p {
-    font-family: "Aleo Bold";
+    font-family: ${props => props.theme.fonts.bold};
   }
 
   :hover {

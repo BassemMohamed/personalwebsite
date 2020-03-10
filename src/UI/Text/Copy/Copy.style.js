@@ -1,8 +1,10 @@
 import { css } from "styled-components";
 export default css`
   width: 100%;
-  margin: 1em 0;
-  padding: 1em 0;
+  padding-top: ${props => props.paddingTop || "1em"};
+  padding-bottom: ${props => props.paddingBottom || "1em"};
+  margin-top: ${props => props.marginTop || "1em"};
+  margin-bottom: ${props => props.marginBottom || "1em"};
 
   h2 {
     margin-bottom: 0.5rem;

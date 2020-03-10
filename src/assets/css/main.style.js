@@ -76,7 +76,7 @@ export default css`
   input,
   button,
   textarea {
-    font-family: "Aleo Regular";
+    font-family: ${props => props.theme.fonts.regular};
   }
 
   input,
@@ -91,7 +91,7 @@ export default css`
   p {
     font-size: 1rem;
     line-height: 135%;
-    font-family: "Aleo Light";
+    font-family: ${props => props.theme.fonts.light};
   }
 
   p::selection,

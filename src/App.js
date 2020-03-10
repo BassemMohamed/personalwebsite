@@ -19,6 +19,12 @@ const theme = {
       border: "#EEE",
       accent: "#FFA500",
       background: "#F5F5F5"
+    },
+    fonts: {
+      bold: "Aleo Bold",
+      light: "Aleo Light",
+      italic: "Aleo Italic",
+      regular: "Aleo Regular"
     }
   }
 };

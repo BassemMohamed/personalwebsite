@@ -11,7 +11,7 @@ export default css`
   }
 
   .post_cover {
-    border-bottom: 1px solid ${props => props.theme.colors.main};
+    border-bottom: 1px solid ${props => props.theme.colors.border};
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
   }

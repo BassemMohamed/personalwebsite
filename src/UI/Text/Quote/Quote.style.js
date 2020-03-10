@@ -26,12 +26,12 @@ export default css`
   p {
     margin-bottom: 10px;
     font-size: 1.375rem;
-    font-family: "Aleo Light";
+    font-family: ${props => props.theme.fonts.light};
   }
   h6 {
     opacity: 150%;
     font-size: 1.3rem;
-    font-family: "Aleo Italic";
+    font-family: ${props => props.theme.fonts.italic};
   }
 
   ${props =>

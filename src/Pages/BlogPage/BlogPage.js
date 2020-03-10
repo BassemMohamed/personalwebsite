@@ -20,7 +20,7 @@ const BlogWrapper = styled.section`
 `;
 
 const BlogPageCopy = () => (
-  <Text.Copy title="Bassem's Personal Blog">
+  <Text.Copy title="Bassem's Personal Blog" marginTop="0" paddingTop="0">
     Writing for me is something between a hobby and a goal. I want to publish a
     book someday{" "}
     <span role="img" aria-label="emoji">
