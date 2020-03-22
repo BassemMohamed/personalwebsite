@@ -40,9 +40,18 @@ const QuotePage = () => (
       He who has a why to live for can bear almost any how.
     </Text.Quote>
     <Text.Quote
+      author="James M. Barrie"
+      authorPage="https://en.wikipedia.org/wiki/J._M._Barrie"
+      align="left"
+    >
+      The life of every man is a diary in which he means to write one story, and
+      writes another; and his humblest hour is when he compares the volume as it
+      is with what he vowed to make it. -
+    </Text.Quote>
+    <Text.Quote
       author="Tim Cook"
       authorPage="https://en.wikipedia.org/wiki/Tim_Cook"
-      align="left"
+      align="right"
     >
       If the service is ‘free’, you are not the customer but the product
     </Text.Quote>
