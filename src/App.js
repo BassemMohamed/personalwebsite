@@ -1,15 +1,16 @@
-import React from "react";
-import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import themes from "./themes";
-import MainRoutes from "./routes";
-import BlogPosts from "./assets/posts";
-import { PostPage, NotFoundPage } from "./Pages";
-import { Menu } from "./UI/";
-import { CoffeeButton } from "./UI/Button";
-import mainStyle from "./assets/css/main.style.js";
-import menuStyle from "./assets/css/menu.style.js";
-import "./assets/fonts/aleo/style.css";
+import './assets/fonts/aleo/style.css';
+
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
+
+import mainStyle from './assets/css/main.style.js';
+import menuStyle from './assets/css/menu.style.js';
+import BlogPosts from './assets/posts';
+import { NotFoundPage, PostPage } from './Pages';
+import MainRoutes from './routes';
+import themes from './themes';
+import { Menu } from './UI/';
 
 const GlobalStyle = createGlobalStyle`
   ${mainStyle}
@@ -45,7 +46,6 @@ class App extends React.Component {
               <Route path={`/post/:postId`} component={PostPage} />
               <Route path="*" component={NotFoundPage} />
             </Switch>
-            <CoffeeButton />
           </PageWrapper>
         </Router>
       </ThemeProvider>

@@ -1,6 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import { Text, Widget } from "../../UI";
+import React from 'react';
+import styled from 'styled-components';
+
+import { Label, SocialBar } from '../../UI';
 
 const HomeWrapper = styled.section`
   margin: 0 auto;
@@ -29,7 +30,7 @@ const HomePage = () => {
             alt="Bassem Mohamed"
           />
         </AvatarWrapper>
-        <Widget.SocialBar
+        <SocialBar
           TwitterFlag
           LinkedinFlag
           GithubFlag
@@ -38,7 +39,7 @@ const HomePage = () => {
           CVFFlag
         />
         <div>
-          <Text.Label>Bassem Mohamed</Text.Label>
+          <Label>Bassem Mohamed</Label>
           <p>
             Hey there!! Bassem is a 2017 computer science graduate, super
             passionate about technology and programming. He has been working as

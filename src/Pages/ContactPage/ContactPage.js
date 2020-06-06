@@ -1,7 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import { Text, TextField, TextArea, Button } from "../../UI/";
-import css from "./ContactPage.style";
+import React from 'react';
+import styled from 'styled-components';
+
+import { Button, Label, TextArea, TextField } from '../../UI/';
+import css from './ContactPage.style';
 
 const encode = data => {
   return Object.keys(data)
@@ -47,7 +48,7 @@ class ContactPage extends React.Component {
     const { className } = this.props;
     return (
       <section className={className} onSubmit={this.handleSubmit}>
-        {userMessage && <Text.Label>{userMessage}</Text.Label>}
+        {userMessage && <Label>{userMessage}</Label>}
         {!userMessage && (
           <form
             name="contact"
@@ -56,7 +57,7 @@ class ContactPage extends React.Component {
             data-netlify-honeypot="bot-field"
           >
             <input type="hidden" name="form-name" value="contact" />
-            <Text.Label>Contact Me</Text.Label>
+            <Label>Contact Me</Label>
             <TextField
               type="text"
               name="name"

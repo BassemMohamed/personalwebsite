@@ -1,4 +1,5 @@
-import { css } from "styled-components";
+import { css } from 'styled-components';
+
 export default css`
   width: 100%;
   padding-top: ${props => props.paddingTop || "1em"};

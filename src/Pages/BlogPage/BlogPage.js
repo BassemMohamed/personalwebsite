@@ -1,8 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import { Helmet } from "react-helmet";
-import BlogPosts from "../../assets/posts";
-import { Card, Text } from "../../UI";
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import styled from 'styled-components';
+
+import BlogPosts from '../../assets/posts';
+import { Card, Copy } from '../../UI';
 
 const BlogWrapper = styled.section`
   display: grid;
@@ -20,7 +21,7 @@ const BlogWrapper = styled.section`
 `;
 
 const BlogPageCopy = () => (
-  <Text.Copy title="Bassem's Personal Blog" marginTop="0" paddingTop="0">
+  <Copy title="Bassem's Personal Blog" marginTop="0" paddingTop="0">
     Writing for me is something between a hobby and a goal. I want to publish a
     book someday{" "}
     <span role="img" aria-label="emoji">
@@ -39,7 +40,7 @@ const BlogPageCopy = () => (
       ☺️
     </span>
     .
-  </Text.Copy>
+  </Copy>
 );
 
 class BlogPage extends React.Component {

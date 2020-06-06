@@ -1,10 +1,11 @@
-import React from "react";
-import styled from "styled-components";
-import { Helmet } from "react-helmet";
-import BlogPosts from "../../assets/posts";
-import css from "./PostPage.style";
-import ReactMarkdown from "react-markdown";
-import { Text } from "../../UI";
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import ReactMarkdown from 'react-markdown';
+import styled from 'styled-components';
+
+import BlogPosts from '../../assets/posts';
+import { Label } from '../../UI';
+import css from './PostPage.style';
 
 class PostPage extends React.Component {
   constructor(props) {
@@ -48,7 +49,7 @@ class PostPage extends React.Component {
         <article className={className}>
           <div className="post_cover">
             <img alt={post.name} src={post.coverImage} />
-            <Text.Label>{post.name}</Text.Label>
+            <Label>{post.name}</Label>
             <p>Published: {post.published}</p>
           </div>
           <div className="post_body">

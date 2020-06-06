@@ -1,5 +1,6 @@
-import { css } from "styled-components";
-import { Widget } from "../../UI";
+import { css } from 'styled-components';
+
+import { GoodReads } from '../../UI';
 
 export default css`
   padding: 0 3.5rem;
@@ -11,7 +12,7 @@ export default css`
     }
   }
 
-  ${Widget.GoodReads} {
+  ${GoodReads} {
     padding: 1rem 0;
     border-bottom: 1px solid ${props => props.theme.colors.border};
   }

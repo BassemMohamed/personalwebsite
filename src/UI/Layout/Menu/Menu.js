@@ -1,9 +1,10 @@
-import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import { slide as Slide } from "react-burger-menu";
-import styled from "styled-components";
-import { Text, Card } from "../";
-import css from "./Menu.style";
+import React, { useState } from 'react';
+import { slide as Slide } from 'react-burger-menu';
+import { Link, useLocation } from 'react-router-dom';
+import styled from 'styled-components';
+
+import { Card, Label } from '../../';
+import css from './Menu.style';
 
 const Menu = ({ className, routes, post }) => {
   let { pathname } = useLocation();
@@ -15,7 +16,7 @@ const Menu = ({ className, routes, post }) => {
 
   const LatestPost = ({ post }) => (
     <div className="bm-item">
-      <Text.Label>Latest Post</Text.Label>
+      <Label>Latest Post</Label>
       <Card
         size="small"
         key={post.key}
