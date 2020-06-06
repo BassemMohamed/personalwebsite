@@ -1,6 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import SocialItem from "./SocialItem";
+import React from 'react';
+import styled from 'styled-components';
+
+import SocialItem from './SocialItem';
 
 const SocialBarWrapper = styled.div`
   margin: 1em 0 1em 0;
@@ -15,6 +16,7 @@ const SocialBar = ({
   DevFlag,
   StackOverFlowFlag,
   HackerrankFlag,
+  GoodreadsFlag,
   GoogleFlag,
   CVFFlag
 }) => (
@@ -23,21 +25,21 @@ const SocialBar = ({
       <SocialItem
         title="Facebook"
         href="https://www.facebook.com/Bassem.mohamed1994"
-        fontAwesomeClass="fab fa-facebook"
+        fontAwesomeClass="fab fa-facebook-square"
       />
     )}
     {TwitterFlag && (
       <SocialItem
         title="Twitter"
         href="https://twitter.com/BassemMohamed94"
-        fontAwesomeClass="fab fa-twitter"
+        fontAwesomeClass="fab fa-twitter-square"
       />
     )}
     {InstagramFlag && (
       <SocialItem
         title="Instagram"
         href="https://www.instagram.com/bassemmohamed94"
-        fontAwesomeClass="fab fa-instagram"
+        fontAwesomeClass="fab fa-instagram-square"
       />
     )}
     {LinkedinFlag && (
@@ -51,7 +53,7 @@ const SocialBar = ({
       <SocialItem
         title="Github"
         href="https://github.com/BassemMohamed"
-        fontAwesomeClass="fab fa-github"
+        fontAwesomeClass="fab fa-github-square"
       />
     )}
     {DevFlag && (
@@ -75,18 +77,25 @@ const SocialBar = ({
         fontAwesomeClass="fab fa-hackerrank"
       />
     )}
+    {GoodreadsFlag && (
+      <SocialItem
+        title="Goodreads"
+        href="https://www.goodreads.com/user/show/90168658-bassem-mohamed"
+        fontAwesomeClass="fab fa-goodreads"
+      />
+    )}
     {GoogleFlag && (
       <SocialItem
         title="Google"
         href="mailto:bassemmohamed1994@gmail.com?Subject=Hello"
-        fontAwesomeClass="fab fa-google"
+        fontAwesomeClass="fas fa-envelope-square"
       />
     )}
     {CVFFlag && (
       <SocialItem
         title="Curriculum Vitae"
         href="https://drive.google.com/open?id=1VEGNhIemy3Nn0PUn4B7cPvhaAcvk5cGR"
-        fontAwesomeClass="fa fa-file"
+        fontAwesomeClass="fa fa-file-pdf"
       />
     )}
   </SocialBarWrapper>
