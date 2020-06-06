@@ -1,4 +1,4 @@
-import { css } from "styled-components";
+import { css } from 'styled-components';
 
 export default css`
   padding: 2em 1em 1em;
@@ -9,11 +9,9 @@ export default css`
     top: 1em;
     left: 2em;
     display: block;
-    font-weight: 700;
-    font-weight: bold;
     position: absolute;
     font-size: 0.785rem;
-    font-family: ${props => props.theme.fonts.italic};
+    ${props => props.theme.fonts.extraLight}
     content: "${({ date }) => date}";
     color: ${props => props.theme.colors.main};
   }

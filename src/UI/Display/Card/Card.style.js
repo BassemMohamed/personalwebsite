@@ -1,4 +1,4 @@
-import { css } from "styled-components";
+import { css } from 'styled-components';
 
 export default css`
   color: ${props => props.theme.colors.main};
@@ -26,7 +26,7 @@ export default css`
       margin: 10px 0;
     }
     .date {
-      font-family: ${props => props.theme.fonts.italic};
+      ${props => props.theme.fonts.italic}
       margin: 0;
       position: absolute;
       left: 20px;

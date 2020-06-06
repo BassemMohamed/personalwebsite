@@ -1,104 +1,103 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import SocialItem from './SocialItem';
+import Icon, { ICON_SIZES } from '../../Display/Icon/Icon';
+import css from './SocialBar.style';
 
-const SocialBarWrapper = styled.div`
-  margin: 1em 0 1em 0;
+export const SOCIALBAR_SIZES = {
+  LARGE: "LARGE",
+  MEDIUM: "MEDIUM",
+  SMALL: "SMALL",
+};
+
+export const SOCIALBAR_ICON_STYLES = {
+  NORMAL: "NORMAL",
+  SQUARE: "SQUARE",
+};
+
+export const SOCIALBAR_ICON = {
+  facebook: {
+    NORMAL: "fab fa-facebook-f",
+    SQUARE: "fab fa-facebook-square",
+  },
+  twitter: {
+    NORMAL: "fab fa-twitter",
+    SQUARE: "fab fa-twitter-square",
+  },
+  instagram: {
+    NORMAL: "fab fa-instagram",
+    SQUARE: "fab fa-instagram-square",
+  },
+  linkedin: {
+    NORMAL: "fab fa-linkedin-in",
+    SQUARE: "fab fa-linkedin",
+  },
+  github: {
+    NORMAL: "fab fa-github",
+    SQUARE: "fab fa-github-square",
+  },
+  dev: {
+    NORMAL: "fab fa-dev",
+    SQUARE: "fab fa-dev",
+  },
+  stackoverflow: {
+    NORMAL: "fab fa-stack-overflow",
+    SQUARE: "fab fa-stack-overflow",
+  },
+  hackerrank: {
+    NORMAL: "fab fa-hackerrank",
+    SQUARE: "fab fa-hackerrank",
+  },
+  goodreads: {
+    NORMAL: "fab fa-goodreads-g",
+    SQUARE: "fab fa-goodreads",
+  },
+  email: {
+    NORMAL: "fas fa-envelope",
+    SQUARE: "fas fa-envelope-square",
+  },
+  resume: {
+    NORMAL: "fa fa-file-pdf",
+    SQUARE: "fa fa-file-pdf",
+  },
+};
+
+/*
+  SocialBar
+
+  Props:
+    * data
+    * size
+    * color
+    * iconStyle
+*/
+const SocialBar = (props) => {
+  const { className, data, size, color, iconstyle } = props;
+
+  if (data && data.length > 0)
+    return (
+      <div className={className} {...props}>
+        {data.map((item, i) => (
+          <Icon
+            key={i}
+            color={color}
+            title={item.title}
+            size={ICON_SIZES[size]}
+            fontawesomeclass={
+              item.fontAwesomeClass ||
+              SOCIALBAR_ICON[item.title][
+              iconstyle || SOCIALBAR_ICON_STYLES.NORMAL
+              ]
+            }
+            onClick={() => window.open(item.url, "_blank")}
+          />
+        ))}
+      </div>
+    );
+
+  return null;
+};
+
+export default styled(SocialBar)`
+  ${css}
 `;
-
-const SocialBar = ({
-  FacebookFlag,
-  TwitterFlag,
-  InstagramFlag,
-  LinkedinFlag,
-  GithubFlag,
-  DevFlag,
-  StackOverFlowFlag,
-  HackerrankFlag,
-  GoodreadsFlag,
-  GoogleFlag,
-  CVFFlag
-}) => (
-  <SocialBarWrapper>
-    {FacebookFlag && (
-      <SocialItem
-        title="Facebook"
-        href="https://www.facebook.com/Bassem.mohamed1994"
-        fontAwesomeClass="fab fa-facebook-square"
-      />
-    )}
-    {TwitterFlag && (
-      <SocialItem
-        title="Twitter"
-        href="https://twitter.com/BassemMohamed94"
-        fontAwesomeClass="fab fa-twitter-square"
-      />
-    )}
-    {InstagramFlag && (
-      <SocialItem
-        title="Instagram"
-        href="https://www.instagram.com/bassemmohamed94"
-        fontAwesomeClass="fab fa-instagram-square"
-      />
-    )}
-    {LinkedinFlag && (
-      <SocialItem
-        title="Linkedin"
-        href="https://www.linkedin.com/in/bassem-mohamed"
-        fontAwesomeClass="fab fa-linkedin"
-      />
-    )}
-    {GithubFlag && (
-      <SocialItem
-        title="Github"
-        href="https://github.com/BassemMohamed"
-        fontAwesomeClass="fab fa-github-square"
-      />
-    )}
-    {DevFlag && (
-      <SocialItem
-        title="Dev"
-        href="https://dev.to/bassemmohamed"
-        fontAwesomeClass="fab fa-dev"
-      />
-    )}
-    {StackOverFlowFlag && (
-      <SocialItem
-        title="StackOverFlow"
-        href="https://stackoverflow.com/users/5947152/bassem-mohamed"
-        fontAwesomeClass="fab fa-stack-overflow"
-      />
-    )}
-    {HackerrankFlag && (
-      <SocialItem
-        title="Hackerrank"
-        href="https://www.hackerrank.com/bassemmohamed191"
-        fontAwesomeClass="fab fa-hackerrank"
-      />
-    )}
-    {GoodreadsFlag && (
-      <SocialItem
-        title="Goodreads"
-        href="https://www.goodreads.com/user/show/90168658-bassem-mohamed"
-        fontAwesomeClass="fab fa-goodreads"
-      />
-    )}
-    {GoogleFlag && (
-      <SocialItem
-        title="Google"
-        href="mailto:bassemmohamed1994@gmail.com?Subject=Hello"
-        fontAwesomeClass="fas fa-envelope-square"
-      />
-    )}
-    {CVFFlag && (
-      <SocialItem
-        title="Curriculum Vitae"
-        href="https://drive.google.com/open?id=1VEGNhIemy3Nn0PUn4B7cPvhaAcvk5cGR"
-        fontAwesomeClass="fa fa-file-pdf"
-      />
-    )}
-  </SocialBarWrapper>
-);
-
-export default SocialBar;

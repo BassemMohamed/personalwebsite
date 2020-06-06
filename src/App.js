@@ -6,11 +6,9 @@ import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
 
 import mainStyle from './assets/css/main.style.js';
 import menuStyle from './assets/css/menu.style.js';
-import BlogPosts from './assets/posts';
 import { NotFoundPage, PostPage } from './Pages';
 import MainRoutes from './routes';
 import themes from './themes';
-import { Menu } from './UI/';
 
 const GlobalStyle = createGlobalStyle`
   ${mainStyle}
@@ -29,10 +27,9 @@ const PageWrapper = styled.div`
 class App extends React.Component {
   render() {
     return (
-      <ThemeProvider theme={themes.btheme}>
+      <ThemeProvider theme={themes.main}>
         <GlobalStyle />
         <Router>
-          <Menu routes={MainRoutes} post={BlogPosts[BlogPosts.length - 1]} />
           <PageWrapper id="page-wrapper">
             <Switch>
               {MainRoutes.map(route => (

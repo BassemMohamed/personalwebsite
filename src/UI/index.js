@@ -3,6 +3,7 @@ import Icon from './Display/Icon';
 import Button from './Input/Button';
 import TextArea from './Input/TextArea';
 import TextField from './Input/TextField';
+import Banner from './Layout/Banner';
 import Header from './Layout/Header';
 import Menu from './Layout/Menu';
 import Copy from './Typography/Copy';
@@ -17,6 +18,7 @@ export { Icon };
 export { Button };
 export { TextArea };
 export { TextField };
+export { Banner }
 export { Header };
 export { Menu };
 export { Label }

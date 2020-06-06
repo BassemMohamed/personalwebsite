@@ -1,19 +1,21 @@
-import { css } from "styled-components";
+import { css } from 'styled-components';
+
+import { ICON_SIZES } from './Icon';
 
 export default css`
-  padding: 10px;
-  margin: 10px;
-  border: 1px solid ${props => props.theme.colors.border};
-  background-color: ${props => props.theme.colors.white};
-  img {
-    width: 100px;
-    height: auto;
-  }
-  p {
-    font-family: ${props => props.theme.fonts.bold};
+  i {
+    /* Default styling */
+    font-size: 16px;
+    color: ${(props) => props.theme.colors.primary["300"]};
+
+    /* Custom styling */
+    color: ${(props) => props.color};
+    cursor: ${(props) => (props.onClick ? "pointer" : "default")};
+    ${(props) => (props.size === ICON_SIZES.MEDIUM ? "font-size: 24px;" : "")}
+    ${(props) => (props.size === ICON_SIZES.LARGE ? "font-size: 30px;" : "")}
   }
 
   :hover {
-    background-color: ${props => props.theme.colors.background};
+    opacity: 0.7;
   }
 `;

@@ -1,64 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-114297086-4"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "UA-114297086-4");
-    </script>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114297086-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    <meta charset="utf-8" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="%PUBLIC_URL%/favicon_16.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="%PUBLIC_URL%/favicon_32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="64x64"
-      href="%PUBLIC_URL%/favicon_64.png"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon_64.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-      crossorigin="anonymous"
-    />
-    <title>Bassem Mohamed | A Software Engineer</title>
-    <meta
-      name="description"
-      content="Bassem Mohamed is an Egyptian software engineer and blogger who loves to hike 🏕"
-    />
-  </head>
-  <body>
-    <!-- This form is a workaround for Netlify Forms, https://www.netlify.com/blog/2017/07/20/how-to-integrate-netlifys-form-handling-in-a-react-app/ -->
-    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <textarea name="message"></textarea>
-    </form>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <main id="root"></main>
-  </body>
+    gtag("config", "UA-114297086-4");
+  </script>
+
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon_16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon_32.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="%PUBLIC_URL%/favicon_64.png" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon_64.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+  <title>Bassem Mohamed | A Software Engineer</title>
+  <meta name="description" content="Bassem Mohamed is an Egyptian software engineer and blogger who loves to hike 🏕" />
+</head>
+
+<body>
+  <!-- This form is a workaround for Netlify Forms, https://www.netlify.com/blog/2017/07/20/how-to-integrate-netlifys-form-handling-in-a-react-app/ -->
+  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <textarea name="message"></textarea>
+  </form>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+
+  <main id="root"></main>
+</body>
+
 </html>

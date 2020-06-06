@@ -1,12 +1,13 @@
 import React from "react";
 import { mount } from "enzyme";
-import CoffeeButton from "./CoffeeButton";
+import Banner from "./Banner";
 
-describe("<CoffeeButton />", () => {
+describe("<Banner />", () => {
   let Wrapper;
   beforeAll(() => {
-    Wrapper = mount(<CoffeeButton />);
+    Wrapper = mount(<Banner />);
   });
+
   it("renders without crashing", () => {
     expect(Wrapper).not.toBeNull();
   });

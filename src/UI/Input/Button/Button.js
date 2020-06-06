@@ -1,20 +1,21 @@
-import React from "react";
-import styled from "styled-components";
-import css from "./Button.style";
+import React from 'react';
+import styled from 'styled-components';
 
-const Button = props => {
+import css from './Button.style';
+
+const Button = (props) => {
   const { className, children, href, onClick, newTab } = props;
 
   return (
-    <button
+    <a
       className={className}
       target={newTab ? "_blank" : ""}
-      href={href}
       onClick={onClick}
+      href={href}
       {...props}
     >
       {children}
-    </button>
+    </a>
   );
 };
 export default styled(Button)`

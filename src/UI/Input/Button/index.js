@@ -1,5 +1,5 @@
-import Button from "./Button";
-import CoffeeButton from "./CoffeeButton";
+import Button from './Button';
+import CoffeeButton from './CoffeeButton';
 
 export default Button;
 export { CoffeeButton };

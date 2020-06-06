@@ -1,11 +1,11 @@
-import { css } from "styled-components";
+import { css } from 'styled-components';
 
 export default css`
   /* CSS Reset */
   body {
     margin: 0;
     position: relative;
-    background-color: ${props => props.theme.colors.background};
+    background-color: ${props => props.theme.colors.neutral['100']};
   }
 
   p {
@@ -23,6 +23,7 @@ export default css`
 
   a {
     text-decoration: none;
+    color: ${(props) => props.theme.colors.accent['300']}
   }
 
   ol,
@@ -42,7 +43,7 @@ export default css`
   html,
   body {
     font-size: 14px;
-    color: ${props => props.theme.colors.main};
+    color: ${props => props.theme.colors.primary['300']};
   }
 
   @media (min-width: 488px) {
@@ -76,7 +77,7 @@ export default css`
   input,
   button,
   textarea {
-    font-family: ${props => props.theme.fonts.regular};
+    ${props => props.theme.fonts.cairo.bold}
   }
 
   input,
@@ -91,9 +92,11 @@ export default css`
   p {
     font-size: 1rem;
     line-height: 135%;
-    font-family: ${props => props.theme.fonts.light};
+    ${props => props.theme.fonts.cairo.light}
   }
 
+  img::selection,
+  a::selection,
   p::selection,
   b::selection,
   strong::selection,
@@ -106,6 +109,6 @@ export default css`
   h4::selection,
   h5::selection,
   h6::selection {
-    background: ${props => props.theme.colors.accent};
+    background: ${props => props.theme.colors.accent['200']};
   }
 `;

@@ -1,43 +1,58 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Label, SocialBar } from '../../UI';
+import { Banner, Button, Copy, Label, SocialBar } from '../../UI';
+import {
+  SOCIALBAR_ICON_STYLES,
+  SOCIALBAR_SIZES,
+} from '../../UI/Widget/SocialBar/SocialBar';
+import css from './HomePage.style';
 
-const HomeWrapper = styled.section`
-  margin: 0 auto;
-  max-width: 600px;
-  p {
-    margin: 1em 0;
-  }
-`;
+const SOCIAL_BAR_DATA = [
+  {
+    title: "twitter",
+    url: "https://twitter.com/BassemMohamed94",
+  },
+  {
+    title: "linkedin",
+    url: "https://www.linkedin.com/in/bassem-mohamed/",
+  },
+  {
+    title: "github",
+    url: "https://github.com/BassemMohamed",
+  },
+  {
+    title: "dev",
+    url: "https://dev.to/bassemmohamed",
+  },
+  {
+    title: "goodreads",
+    url: "https://www.goodreads.com/user/show/90168658-bassem-mohamed",
+  },
+  {
+    title: "email",
+    url: "mailto:bassemmohamed1994@gmail.com?Subject=Hello",
+  },
+  {
+    title: "resume",
+    url: "https://drive.google.com/open?id=1VEGNhIemy3Nn0PUn4B7cPvhaAcvk5cGR",
+  },
+];
 
-const AvatarWrapper = styled.div`
-  img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 20%;
-    height: auto;
-  }
-`;
-
-const HomePage = () => {
+const HomePage = ({ className }) => {
   return (
-    <>
-      <HomeWrapper>
-        <AvatarWrapper>
+    <section className={className}>
+      <div className="pic-bio-wrapper">
+        <div className="avatar-wrapper">
           <img
             src={require("../../assets/images/bassem.jpeg")}
             alt="Bassem Mohamed"
           />
-        </AvatarWrapper>
+        </div>
         <SocialBar
-          TwitterFlag
-          LinkedinFlag
-          GithubFlag
-          DevFlag
-          GoodreadsFlag
-          GoogleFlag
-          CVFFlag
+          size={SOCIALBAR_SIZES.LARGE}
+          iconstyle={SOCIALBAR_ICON_STYLES.SQUARE}
+          data={SOCIAL_BAR_DATA}
         />
         <div>
           <Label>Bassem Mohamed</Label>
@@ -83,9 +98,22 @@ const HomePage = () => {
             total post views.
           </p>
         </div>
-      </HomeWrapper>
-    </>
+      </div>
+      <Banner
+        marginTop="0"
+        marginBottom="0"
+        image={require("../../assets/images/blog-copy-background.png")}
+      >
+        <Copy>
+          Writing for me is something between a hobby and a goal. I want to publish a book someday. For now though, I publish technical blog posts causually on dev.to. Feel free to check them out.
+          <Button>Blog</Button>
+        </Copy>
+      </Banner>
+    </section>
   );
 };
 
-export default HomePage;
+export default styled(HomePage)`
+  ${css}
+`;
+
