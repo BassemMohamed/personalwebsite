@@ -15,7 +15,7 @@ export default css`
 
   .pic-bio-wrapper {
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 750px;
     p {
       margin: 1em 0;
     }
@@ -27,6 +27,21 @@ export default css`
       max-width: 300px;
       border-radius: 20%;
       height: auto;
+    }
+  }
+
+  .blog-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+
+    @media (min-width: 750px) {
+      grid-template-columns: auto auto;
+    }
+    @media (min-width: 1025px) {
+      grid-template-columns: auto auto auto;
     }
   }
 `;

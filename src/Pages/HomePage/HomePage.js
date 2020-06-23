@@ -1,12 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Banner, Button, Copy, Label, SocialBar } from '../../UI';
+import BlogPosts from '../../assets/posts';
+import { Banner, Card, Copy, Label, SocialBar } from '../../UI';
 import {
   SOCIALBAR_ICON_STYLES,
   SOCIALBAR_SIZES,
 } from '../../UI/Widget/SocialBar/SocialBar';
 import css from './HomePage.style';
+
 
 const SOCIAL_BAR_DATA = [
   {
@@ -99,16 +101,32 @@ const HomePage = ({ className }) => {
           </p>
         </div>
       </div>
+
       <Banner
         marginTop="0"
         marginBottom="0"
         image={require("../../assets/images/blog-copy-background.png")}
       >
+        <Label>Bassem's Blog</Label>
         <Copy>
           Writing for me is something between a hobby and a goal. I want to publish a book someday. For now though, I publish technical blog posts causually on dev.to. Feel free to check them out.
-          <Button>Blog</Button>
         </Copy>
       </Banner>
+
+      <div className="blog-wrapper">
+        {BlogPosts.slice(0)
+          .reverse()
+          .map(post => (
+            <Card
+              key={post.key}
+              name={post.name}
+              image={post.coverImage}
+              url={post.devUrl}
+              desc={post.description}
+              date={post.published}
+            />
+          ))}
+      </div>
     </section>
   );
 };

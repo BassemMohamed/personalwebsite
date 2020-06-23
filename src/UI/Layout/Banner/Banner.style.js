@@ -27,6 +27,10 @@ export default css`
     position: absolute;
     transform: translate(-50%, -50%);
 
+    h2 {
+      color: ${(props) => props.theme.colors.neutral["100"]};
+    }
+
     p,
     a {
       font-size: 1rem;

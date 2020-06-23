@@ -133,5 +133,45 @@ export default [
       "https://thepracticaldev.s3.amazonaws.com/i/4em9wjblzhsh4f9vav1x.png",
     devUrl:
       "https://dev.to/bassemmohamed/the-perfect-react-s-component-doesn-t-exist-fgn"
+  },
+  {
+    key: "7-Linux-operators-you-should-know-about",
+    name: "7 Linux operators you should know about",
+    published: "Apr 1, 2020",
+    description: "In today's post, We talk about Linux operators everyone using a command line should know.",
+    coverImage: "https://dev-to-uploads.s3.amazonaws.com/i/klsi9vwpgwmhg2bidclv.png",
+    devUrl: "https://dev.to/bassemmohamed/7-linux-operators-you-should-know-about-2m3f"
+  },
+  {
+    key: "Whats-Ecma-&-TC39",
+    name: "What's Ecma & TC39 ?!",
+    published: "Apr 12, 2020",
+    description: "Have you ever wondered who is responsible for adding to the ECMAScript language specification?!",
+    coverImage: "https://dev-to-uploads.s3.amazonaws.com/i/x1z3720a2y72pcoauejk.png",
+    devUrl: "https://dev.to/bassemmohamed/what-s-ecma-tc39-206b"
+  },
+  {
+    key: "How-am-I-dealing-with-anxiety-during-COVID-19",
+    name: "How am I dealing with anxiety during COVID-19",
+    published: "May 8, 2020",
+    description: "Anxiety levels are skyrocketing during COVID-19. It's about time for me to share how I have been cooping with it.",
+    coverImage: "https://dev-to-uploads.s3.amazonaws.com/i/16e4rt6t6hddhe8eklac.png",
+    devUrl: "https://dev.to/bassemmohamed/how-am-i-dealing-with-anxiety-during-covid-19-545h"
+  },
+  {
+    key: "7-Awesome-Gnome-Extensions-For-You",
+    name: "7 Awesome Gnome Extensions For You",
+    published: "May 9, 2020",
+    description: "What Gnome extensions am I using for my Ubuntu work setup?",
+    coverImage: "https://dev-to-uploads.s3.amazonaws.com/i/fg9klpvk4ck7irugp8xy.png",
+    devUrl: "https://dev.to/bassemmohamed/7-awesome-gnome-extensions-for-you-35cm"
+  },
+  {
+    key: "4-steps-to-land-more-interviews",
+    name: "4 steps to land more interviews",
+    published: "May 18, 2020",
+    description: "I used to struggle quite hard with CV screening. In today's post, I would like to share 4 steps that helped me turn the table.",
+    coverImage: "https://dev-to-uploads.s3.amazonaws.com/i/21c6qa6d8l4zless7bxk.png",
+    devUrl: "https://dev.to/bassemmohamed/4-steps-to-land-more-interviews-2ad2"
   }
 ];

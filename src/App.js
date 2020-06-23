@@ -6,7 +6,7 @@ import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
 
 import mainStyle from './assets/css/main.style.js';
 import menuStyle from './assets/css/menu.style.js';
-import { NotFoundPage, PostPage } from './Pages';
+import { NotFoundPage } from './Pages';
 import MainRoutes from './routes';
 import themes from './themes';
 
@@ -40,7 +40,6 @@ class App extends React.Component {
                   component={route.component}
                 />
               ))}
-              <Route path={`/post/:postId`} component={PostPage} />
               <Route path="*" component={NotFoundPage} />
             </Switch>
           </PageWrapper>
