@@ -7,8 +7,10 @@ export default css`
   position: relative;
   cursor: pointer;
   text-align: left;
-  border: 1px solid ${props => props.theme.colors.border};
+  border: 1px solid #E66B00;
   background-color: ${props => props.theme.colors.white};
+  border-radius: 8px;
+  overflow: hidden;
 
   .image {
     background-image: url(${({ image }) => image});

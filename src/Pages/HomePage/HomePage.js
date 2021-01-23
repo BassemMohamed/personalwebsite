@@ -9,7 +9,6 @@ import {
 } from '../../UI/Widget/SocialBar/SocialBar';
 import css from './HomePage.style';
 
-
 const SOCIAL_BAR_DATA = [
   {
     title: "twitter",
@@ -47,7 +46,7 @@ const HomePage = ({ className }) => {
       <div className="pic-bio-wrapper">
         <div className="avatar-wrapper">
           <img
-            src={require("../../assets/images/bassem.jpeg")}
+            src={require("../../assets/images/bassem.jpg")}
             alt="Bassem Mohamed"
           />
         </div>
@@ -57,38 +56,18 @@ const HomePage = ({ className }) => {
           data={SOCIAL_BAR_DATA}
         />
         <div>
-          <Label>Bassem Mohamed</Label>
           <p>
-            Hey there!! Bassem is a 2017 computer science graduate, super
-            passionate about technology and programming. He has been working as
-            a software engineer for a couple of years now. He kick started his
-            career working as a full-stack web developer in a{" "}
+            Hey, I am <b>Bassem Ibrahim</b>, I am a frontend developer with <b>4+</b> years of experience, I am super passionate building clean & simple UI. Mid-2020, I managed to relocate to Germany during the panademic. You can read about the whole story{" "}
             <a
               rel="noopener noreferrer"
               target="_blank"
-              href="https://www.beyond-creation.net/"
+              href="https://getbyrd.com/en/blog/relocating-to-germany-during-the-pandemic/"
             >
-              digital marketing agency
-            </a>{" "}
-            where he spent a full year building websites for big brands like
-            Nestle, Creative closets and Aramex.
-          </p>
-          <p>
-            Choosing <b>frontend</b> as his speciality, He started working as a
-            frontend developer at{" "}
-            <a
-              rel="noopener noreferrer"
-              target="_blank"
-              href="https://www.seal-software.com/"
-            >
-              seal-software
+              here.
             </a>
-            , The leader in AI-powered contract analytics, discovery & data
-            extraction.
           </p>
           <p>
-            Also, Bassem wants to become a <b>writer</b> someday. Late 2018 He
-            started writing technical blog posts on{" "}
+            On the weekends, you can either find me hiking, maybe cycling, or just a lazy couchpotato daydreaming about van life. Also, I want to become a writer someday. Late 2018 I started writing technical blog posts on{" "}
             <a
               rel="noopener noreferrer"
               target="_blank"
@@ -96,20 +75,19 @@ const HomePage = ({ className }) => {
             >
               dev.to
             </a>
-            , Right now he published <b>12+</b> posts that have <b>26,000+</b>{" "}
-            total post views.
+            , Right now I published <b>12+</b> posts that have <b>26,000+</b> total post views.
           </p>
         </div>
       </div>
 
       <Banner
         marginTop="0"
-        marginBottom="0"
+        marginBottom="5em"
         image={require("../../assets/images/blog-copy-background.png")}
       >
         <Label>Bassem's Blog</Label>
         <Copy>
-          Writing for me is something between a hobby and a goal. I want to publish a book someday. For now though, I publish technical blog posts causually on dev.to. Feel free to check them out.
+          Writing for me is something between a hobby and a goal. I publish technical blog posts causually on dev.to. Feel free to check them out.
         </Copy>
       </Banner>
 

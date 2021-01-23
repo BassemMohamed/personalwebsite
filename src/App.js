@@ -17,11 +17,6 @@ const GlobalStyle = createGlobalStyle`
 
 const PageWrapper = styled.div`
   text-align: center;
-  padding: 1.5rem 0;
-
-  @media (min-width: 450px) {
-    padding: 3.5rem 0;
-  }
 `;
 
 class App extends React.Component {
