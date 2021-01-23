@@ -173,5 +173,13 @@ export default [
     description: "I used to struggle quite hard with CV screening. In today's post, I would like to share 4 steps that helped me turn the table.",
     coverImage: "https://dev-to-uploads.s3.amazonaws.com/i/21c6qa6d8l4zless7bxk.png",
     devUrl: "https://dev.to/bassemmohamed/4-steps-to-land-more-interviews-2ad2"
+  },
+  {
+    key: "relocating-to-Germany-during-the-pandemic",
+    name: "Relocating to Germany during the pandemic",
+    published: "Jan 20, 2021",
+    description: "This is a story of how I joined byrd as a frontend engineer",
+    coverImage: "https://i.ibb.co/cF6w7mG/relocating-to-Germany-during-the-pandemic.jpg",
+    devUrl: "https://getbyrd.com/en/blog/relocating-to-germany-during-the-pandemic/"
   }
 ];
