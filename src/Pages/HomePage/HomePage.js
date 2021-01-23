@@ -47,7 +47,7 @@ const HomePage = ({ className }) => {
         <div className="avatar-wrapper">
           <img
             src={require("../../assets/images/bassem.jpg")}
-            alt="Bassem Mohamed"
+            alt="Bassem Ibrahim"
           />
         </div>
         <SocialBar
@@ -57,24 +57,20 @@ const HomePage = ({ className }) => {
         />
         <div>
           <p>
-            Hey, I am <b>Bassem Ibrahim</b>, I am a frontend developer with <b>4+</b> years of experience, I am super passionate building clean & simple UI. Mid-2020, I managed to relocate to Germany during the panademic. You can read about the whole story{" "}
+            Hey, I am <b>Bassem Ibrahim</b>, I am a frontend developer with <b>4+</b> years of experience, I am super passionate building clean & simple UI. Mid-2020, I managed to relocate to Germany during the panademic. You can read about the whole story
             <a
               rel="noopener noreferrer"
               target="_blank"
               href="https://getbyrd.com/en/blog/relocating-to-germany-during-the-pandemic/"
-            >
-              here.
-            </a>
+            > here.</a>
           </p>
           <p>
-            On the weekends, you can either find me hiking, maybe cycling, or just a lazy couchpotato daydreaming about van life. Also, I want to become a writer someday. Late 2018 I started writing technical blog posts on{" "}
+            On the weekends, you can either find me hiking, maybe cycling, or just a lazy couchpotato daydreaming about van life. Also, I want to become a writer someday. Late 2018 I started writing technical blog posts on
             <a
               rel="noopener noreferrer"
               target="_blank"
               href="https://dev.to/bassemmohamed"
-            >
-              dev.to
-            </a>
+            > dev.to</a>
             , Right now I published <b>12+</b> posts that have <b>26,000+</b> total post views.
           </p>
         </div>
