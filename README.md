@@ -4,6 +4,7 @@
 [![GitHub contributors](https://img.shields.io/github/contributors/bassemmohamed/bassemmohamed.me)](https://github.com/BassemMohamed/bassemmohamed.me/graphs/contributors)
 [![GitHub stars](https://img.shields.io/github/stars/bassemmohamed/bassemmohamed.me?style=social)](https://github.com/BassemMohamed/bassemmohamed.me/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/bassemmohamed/bassemmohamed.me?style=social)](https://github.com/BassemMohamed/bassemmohamed.me/network/members)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b68e9d2b-c139-47bc-a439-05271f14ede7/deploy-status)](https://app.netlify.com/sites/bassemmohamed/deploys)
 [![Twitter Follow](https://img.shields.io/twitter/follow/bassemmohamed94?style=social)](https://twitter.com/BassemMohamed94)
 
 ### Personal Website and Blog
